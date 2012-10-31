@@ -1,0 +1,5 @@
+module testModule{
+	reg testReg = 0;
+	testReg = testReg + 1;
+	testReg = (testReg + 1) * 2;
+}

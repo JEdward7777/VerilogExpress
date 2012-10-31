@@ -1,6 +1,7 @@
-package verilogExpress;
+// $ANTLR 3.4 C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g 2012-10-31 19:33:55
 
-//$ANTLR 3.4 /Josh/ua/lunch/ve/VerilogExpress.g 2012-10-25 16:03:27
+    package verilogExpress;
+
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -31,6 +32,9 @@ public class VerilogExpressLexer extends Lexer {
     public static final int T__28=28;
     public static final int T__29=29;
     public static final int T__30=30;
+    public static final int T__31=31;
+    public static final int T__32=32;
+    public static final int T__33=33;
     public static final int DIV_=4;
     public static final int INT=5;
     public static final int NOT_=6;
@@ -51,15 +55,15 @@ public class VerilogExpressLexer extends Lexer {
     public VerilogExpressLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/Josh/ua/lunch/ve/VerilogExpress.g"; }
+    public String getGrammarFileName() { return "C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g"; }
 
     // $ANTLR start "T__10"
     public final void mT__10() throws RecognitionException {
         try {
             int _type = T__10;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:2:7: ( '!=' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:2:9: '!='
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:6:7: ( '!=' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:6:9: '!='
             {
             match("!="); 
 
@@ -81,8 +85,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:3:7: ( '&&' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:3:9: '&&'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:7:7: ( '&&' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:7:9: '&&'
             {
             match("&&"); 
 
@@ -104,8 +108,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:4:7: ( '&' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:4:9: '&'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:8:7: ( '&' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:8:9: '&'
             {
             match('&'); 
 
@@ -125,8 +129,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:5:7: ( '(' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:5:9: '('
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:9:7: ( '(' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:9:9: '('
             {
             match('('); 
 
@@ -146,8 +150,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:6:7: ( ')' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:6:9: ')'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:10:7: ( ')' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:10:9: ')'
             {
             match(')'); 
 
@@ -167,8 +171,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:7:7: ( '+' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:7:9: '+'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:11:7: ( '+' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:11:9: '+'
             {
             match('+'); 
 
@@ -188,8 +192,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:8:7: ( '-' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:8:9: '-'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:12:7: ( '-' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:12:9: '-'
             {
             match('-'); 
 
@@ -209,8 +213,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:9:7: ( ';' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:9:9: ';'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:13:7: ( ';' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:13:9: ';'
             {
             match(';'); 
 
@@ -230,8 +234,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:10:7: ( '<' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:10:9: '<'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:14:7: ( '<' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:14:9: '<'
             {
             match('<'); 
 
@@ -251,8 +255,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:11:7: ( '<<' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:11:9: '<<'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:15:7: ( '<<' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:15:9: '<<'
             {
             match("<<"); 
 
@@ -274,8 +278,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:12:7: ( '=' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:12:9: '='
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:16:7: ( '=' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:16:9: '='
             {
             match('='); 
 
@@ -295,8 +299,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:13:7: ( '==' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:13:9: '=='
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:17:7: ( '==' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:17:9: '=='
             {
             match("=="); 
 
@@ -318,8 +322,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:14:7: ( '>' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:14:9: '>'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:18:7: ( '>' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:18:9: '>'
             {
             match('>'); 
 
@@ -339,8 +343,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:15:7: ( '>>' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:15:9: '>>'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:19:7: ( '>>' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:19:9: '>>'
             {
             match(">>"); 
 
@@ -362,8 +366,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:16:7: ( '[' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:16:9: '['
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:20:7: ( '[' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:20:9: '['
             {
             match('['); 
 
@@ -383,8 +387,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:17:7: ( ']' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:17:9: ']'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:21:7: ( ']' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:21:9: ']'
             {
             match(']'); 
 
@@ -404,10 +408,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:18:7: ( 'module' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:18:9: 'module'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:22:7: ( 'const' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:22:9: 'const'
             {
-            match("module"); 
+            match("const"); 
 
 
 
@@ -427,10 +431,12 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:19:7: ( '{' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:19:9: '{'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:23:7: ( 'module' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:23:9: 'module'
             {
-            match('{'); 
+            match("module"); 
+
+
 
             }
 
@@ -448,10 +454,12 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:20:7: ( '|' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:20:9: '|'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:24:7: ( 'pipe' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:24:9: 'pipe'
             {
-            match('|'); 
+            match("pipe"); 
+
+
 
             }
 
@@ -469,10 +477,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:21:7: ( '||' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:21:9: '||'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:25:7: ( 'reg' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:25:9: 'reg'
             {
-            match("||"); 
+            match("reg"); 
 
 
 
@@ -492,10 +500,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:22:7: ( '}' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:22:9: '}'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:26:7: ( '{' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:26:9: '{'
             {
-            match('}'); 
+            match('{'); 
 
             }
 
@@ -508,13 +516,78 @@ public class VerilogExpressLexer extends Lexer {
     }
     // $ANTLR end "T__30"
 
+    // $ANTLR start "T__31"
+    public final void mT__31() throws RecognitionException {
+        try {
+            int _type = T__31;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:27:7: ( '|' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:27:9: '|'
+            {
+            match('|'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__31"
+
+    // $ANTLR start "T__32"
+    public final void mT__32() throws RecognitionException {
+        try {
+            int _type = T__32;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:28:7: ( '||' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:28:9: '||'
+            {
+            match("||"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__32"
+
+    // $ANTLR start "T__33"
+    public final void mT__33() throws RecognitionException {
+        try {
+            int _type = T__33;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:29:7: ( '}' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:29:9: '}'
+            {
+            match('}'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__33"
+
     // $ANTLR start "NOT_"
     public final void mNOT_() throws RecognitionException {
         try {
             int _type = NOT_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:84:7: ( '!' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:84:9: '!'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:138:7: ( '!' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:138:9: '!'
             {
             match('!'); 
 
@@ -534,8 +607,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = TIMES_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:85:8: ( '*' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:85:10: '*'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:139:8: ( '*' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:139:10: '*'
             {
             match('*'); 
 
@@ -555,8 +628,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = DIV_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:86:6: ( '/' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:86:8: '/'
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:140:6: ( '/' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:140:8: '/'
             {
             match('/'); 
 
@@ -576,8 +649,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = VAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:88:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:88:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:142:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:142:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -589,7 +662,7 @@ public class VerilogExpressLexer extends Lexer {
             }
 
 
-            // /Josh/ua/lunch/ve/VerilogExpress.g:88:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:142:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -602,7 +675,7 @@ public class VerilogExpressLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /Josh/ua/lunch/ve/VerilogExpress.g:
+            	    // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -639,10 +712,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:91:5: ( ( '0' .. '9' )+ )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:91:7: ( '0' .. '9' )+
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:145:5: ( ( '0' .. '9' )+ )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:145:7: ( '0' .. '9' )+
             {
-            // /Josh/ua/lunch/ve/VerilogExpress.g:91:7: ( '0' .. '9' )+
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:145:7: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -656,7 +729,7 @@ public class VerilogExpressLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /Josh/ua/lunch/ve/VerilogExpress.g:
+            	    // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -697,8 +770,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:108:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:108:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:162:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:162:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -724,8 +797,8 @@ public class VerilogExpressLexer extends Lexer {
     // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /Josh/ua/lunch/ve/VerilogExpress.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS )
-        int alt3=27;
+        // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS )
+        int alt3=30;
         switch ( input.LA(1) ) {
         case '!':
             {
@@ -735,7 +808,7 @@ public class VerilogExpressLexer extends Lexer {
                 alt3=1;
             }
             else {
-                alt3=22;
+                alt3=25;
             }
             }
             break;
@@ -822,83 +895,182 @@ public class VerilogExpressLexer extends Lexer {
             alt3=16;
             }
             break;
-        case 'm':
+        case 'c':
             {
             int LA3_13 = input.LA(2);
 
             if ( (LA3_13=='o') ) {
-                int LA3_32 = input.LA(3);
+                int LA3_35 = input.LA(3);
 
-                if ( (LA3_32=='d') ) {
-                    int LA3_35 = input.LA(4);
+                if ( (LA3_35=='n') ) {
+                    int LA3_41 = input.LA(4);
 
-                    if ( (LA3_35=='u') ) {
-                        int LA3_36 = input.LA(5);
+                    if ( (LA3_41=='s') ) {
+                        int LA3_45 = input.LA(5);
 
-                        if ( (LA3_36=='l') ) {
-                            int LA3_37 = input.LA(6);
+                        if ( (LA3_45=='t') ) {
+                            int LA3_49 = input.LA(6);
 
-                            if ( (LA3_37=='e') ) {
-                                int LA3_38 = input.LA(7);
-
-                                if ( ((LA3_38 >= '0' && LA3_38 <= '9')||(LA3_38 >= 'A' && LA3_38 <= 'Z')||LA3_38=='_'||(LA3_38 >= 'a' && LA3_38 <= 'z')) ) {
-                                    alt3=25;
-                                }
-                                else {
-                                    alt3=17;
-                                }
+                            if ( ((LA3_49 >= '0' && LA3_49 <= '9')||(LA3_49 >= 'A' && LA3_49 <= 'Z')||LA3_49=='_'||(LA3_49 >= 'a' && LA3_49 <= 'z')) ) {
+                                alt3=28;
                             }
                             else {
-                                alt3=25;
+                                alt3=17;
                             }
                         }
                         else {
-                            alt3=25;
+                            alt3=28;
                         }
                     }
                     else {
-                        alt3=25;
+                        alt3=28;
                     }
                 }
                 else {
-                    alt3=25;
+                    alt3=28;
                 }
             }
             else {
-                alt3=25;
+                alt3=28;
+            }
+            }
+            break;
+        case 'm':
+            {
+            int LA3_14 = input.LA(2);
+
+            if ( (LA3_14=='o') ) {
+                int LA3_36 = input.LA(3);
+
+                if ( (LA3_36=='d') ) {
+                    int LA3_42 = input.LA(4);
+
+                    if ( (LA3_42=='u') ) {
+                        int LA3_46 = input.LA(5);
+
+                        if ( (LA3_46=='l') ) {
+                            int LA3_50 = input.LA(6);
+
+                            if ( (LA3_50=='e') ) {
+                                int LA3_53 = input.LA(7);
+
+                                if ( ((LA3_53 >= '0' && LA3_53 <= '9')||(LA3_53 >= 'A' && LA3_53 <= 'Z')||LA3_53=='_'||(LA3_53 >= 'a' && LA3_53 <= 'z')) ) {
+                                    alt3=28;
+                                }
+                                else {
+                                    alt3=18;
+                                }
+                            }
+                            else {
+                                alt3=28;
+                            }
+                        }
+                        else {
+                            alt3=28;
+                        }
+                    }
+                    else {
+                        alt3=28;
+                    }
+                }
+                else {
+                    alt3=28;
+                }
+            }
+            else {
+                alt3=28;
+            }
+            }
+            break;
+        case 'p':
+            {
+            int LA3_15 = input.LA(2);
+
+            if ( (LA3_15=='i') ) {
+                int LA3_37 = input.LA(3);
+
+                if ( (LA3_37=='p') ) {
+                    int LA3_43 = input.LA(4);
+
+                    if ( (LA3_43=='e') ) {
+                        int LA3_47 = input.LA(5);
+
+                        if ( ((LA3_47 >= '0' && LA3_47 <= '9')||(LA3_47 >= 'A' && LA3_47 <= 'Z')||LA3_47=='_'||(LA3_47 >= 'a' && LA3_47 <= 'z')) ) {
+                            alt3=28;
+                        }
+                        else {
+                            alt3=19;
+                        }
+                    }
+                    else {
+                        alt3=28;
+                    }
+                }
+                else {
+                    alt3=28;
+                }
+            }
+            else {
+                alt3=28;
+            }
+            }
+            break;
+        case 'r':
+            {
+            int LA3_16 = input.LA(2);
+
+            if ( (LA3_16=='e') ) {
+                int LA3_38 = input.LA(3);
+
+                if ( (LA3_38=='g') ) {
+                    int LA3_44 = input.LA(4);
+
+                    if ( ((LA3_44 >= '0' && LA3_44 <= '9')||(LA3_44 >= 'A' && LA3_44 <= 'Z')||LA3_44=='_'||(LA3_44 >= 'a' && LA3_44 <= 'z')) ) {
+                        alt3=28;
+                    }
+                    else {
+                        alt3=20;
+                    }
+                }
+                else {
+                    alt3=28;
+                }
+            }
+            else {
+                alt3=28;
             }
             }
             break;
         case '{':
             {
-            alt3=18;
+            alt3=21;
             }
             break;
         case '|':
             {
-            int LA3_15 = input.LA(2);
+            int LA3_18 = input.LA(2);
 
-            if ( (LA3_15=='|') ) {
-                alt3=20;
+            if ( (LA3_18=='|') ) {
+                alt3=23;
             }
             else {
-                alt3=19;
+                alt3=22;
             }
             }
             break;
         case '}':
             {
-            alt3=21;
+            alt3=24;
             }
             break;
         case '*':
             {
-            alt3=23;
+            alt3=26;
             }
             break;
         case '/':
             {
-            alt3=24;
+            alt3=27;
             }
             break;
         case 'A':
@@ -930,7 +1102,6 @@ public class VerilogExpressLexer extends Lexer {
         case '_':
         case 'a':
         case 'b':
-        case 'c':
         case 'd':
         case 'e':
         case 'f':
@@ -942,9 +1113,7 @@ public class VerilogExpressLexer extends Lexer {
         case 'l':
         case 'n':
         case 'o':
-        case 'p':
         case 'q':
-        case 'r':
         case 's':
         case 't':
         case 'u':
@@ -954,7 +1123,7 @@ public class VerilogExpressLexer extends Lexer {
         case 'y':
         case 'z':
             {
-            alt3=25;
+            alt3=28;
             }
             break;
         case '0':
@@ -968,7 +1137,7 @@ public class VerilogExpressLexer extends Lexer {
         case '8':
         case '9':
             {
-            alt3=26;
+            alt3=29;
             }
             break;
         case '\t':
@@ -976,7 +1145,7 @@ public class VerilogExpressLexer extends Lexer {
         case '\r':
         case ' ':
             {
-            alt3=27;
+            alt3=30;
             }
             break;
         default:
@@ -989,7 +1158,7 @@ public class VerilogExpressLexer extends Lexer {
 
         switch (alt3) {
             case 1 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:10: T__10
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:10: T__10
                 {
                 mT__10(); 
 
@@ -997,7 +1166,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:16: T__11
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:16: T__11
                 {
                 mT__11(); 
 
@@ -1005,7 +1174,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:22: T__12
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:22: T__12
                 {
                 mT__12(); 
 
@@ -1013,7 +1182,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:28: T__13
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:28: T__13
                 {
                 mT__13(); 
 
@@ -1021,7 +1190,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:34: T__14
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:34: T__14
                 {
                 mT__14(); 
 
@@ -1029,7 +1198,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:40: T__15
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:40: T__15
                 {
                 mT__15(); 
 
@@ -1037,7 +1206,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:46: T__16
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:46: T__16
                 {
                 mT__16(); 
 
@@ -1045,7 +1214,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:52: T__17
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:52: T__17
                 {
                 mT__17(); 
 
@@ -1053,7 +1222,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:58: T__18
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:58: T__18
                 {
                 mT__18(); 
 
@@ -1061,7 +1230,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:64: T__19
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:64: T__19
                 {
                 mT__19(); 
 
@@ -1069,7 +1238,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:70: T__20
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:70: T__20
                 {
                 mT__20(); 
 
@@ -1077,7 +1246,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:76: T__21
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:76: T__21
                 {
                 mT__21(); 
 
@@ -1085,7 +1254,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:82: T__22
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:82: T__22
                 {
                 mT__22(); 
 
@@ -1093,7 +1262,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:88: T__23
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:88: T__23
                 {
                 mT__23(); 
 
@@ -1101,7 +1270,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:94: T__24
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:94: T__24
                 {
                 mT__24(); 
 
@@ -1109,7 +1278,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:100: T__25
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:100: T__25
                 {
                 mT__25(); 
 
@@ -1117,7 +1286,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:106: T__26
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:106: T__26
                 {
                 mT__26(); 
 
@@ -1125,7 +1294,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:112: T__27
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:112: T__27
                 {
                 mT__27(); 
 
@@ -1133,7 +1302,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:118: T__28
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:118: T__28
                 {
                 mT__28(); 
 
@@ -1141,7 +1310,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 20 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:124: T__29
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:124: T__29
                 {
                 mT__29(); 
 
@@ -1149,7 +1318,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 21 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:130: T__30
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:130: T__30
                 {
                 mT__30(); 
 
@@ -1157,47 +1326,71 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 22 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:136: NOT_
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:136: T__31
+                {
+                mT__31(); 
+
+
+                }
+                break;
+            case 23 :
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:142: T__32
+                {
+                mT__32(); 
+
+
+                }
+                break;
+            case 24 :
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:148: T__33
+                {
+                mT__33(); 
+
+
+                }
+                break;
+            case 25 :
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:154: NOT_
                 {
                 mNOT_(); 
 
 
                 }
                 break;
-            case 23 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:141: TIMES_
+            case 26 :
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:159: TIMES_
                 {
                 mTIMES_(); 
 
 
                 }
                 break;
-            case 24 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:148: DIV_
+            case 27 :
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:166: DIV_
                 {
                 mDIV_(); 
 
 
                 }
                 break;
-            case 25 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:153: VAR
+            case 28 :
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:171: VAR
                 {
                 mVAR(); 
 
 
                 }
                 break;
-            case 26 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:157: INT
+            case 29 :
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:175: INT
                 {
                 mINT(); 
 
 
                 }
                 break;
-            case 27 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:161: WS
+            case 30 :
+                // C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g:1:179: WS
                 {
                 mWS(); 
 
