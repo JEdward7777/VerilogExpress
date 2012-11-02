@@ -2,9 +2,7 @@ package verilogExpress;
 
 
 
-import java.io.*;
 import org.antlr.runtime.*;
-import org.antlr.runtime.tree.*;
 
 //http://www.irisa.fr/caps/people/hardy/m1comp/doc/trees.html
 //shows how to make ANTLR actually return something. Might be just for a previouse version of ANTLR

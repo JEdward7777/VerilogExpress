@@ -10,10 +10,12 @@ public class OutputPort implements DataTarget, VerilogCodeSource {
 	VerilogFileModule fileModule = null;
 	String portName = null;
 	
-	public OutputPort( VerilogFileModule newFileModule, String newPortName ){
+	public OutputPort( String newPortName ){
 		portName = newPortName;
+	}
+	
+	public void setFileModule( VerilogFileModule newFileModule ){
 		fileModule = newFileModule;
-		fileModule.addOutputPort( this );
 	}
 	
 	public String generateParamList(){

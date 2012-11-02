@@ -6,7 +6,7 @@ public class VerilogSystem {
 	
 	VerilogFileModule topLevel = null;
 	
-	DataTarget standardOut = null;
+	OutputPort standardOut = null;
 	
 	String name = null;
 	
@@ -22,7 +22,8 @@ public class VerilogSystem {
 	public DataTarget getStdOut() {
 		
 		if( standardOut == null ){
-			standardOut = new OutputPort(topLevel, "stdOut" );
+			standardOut = new OutputPort( "stdOut" );
+			topLevel.addOutputPort( standardOut );
 		}
 		return standardOut;
 	}

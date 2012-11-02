@@ -1,6 +1,7 @@
-package verilogExpress;
+// $ANTLR 3.4 C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g 2012-11-02 12:40:39
 
-//$ANTLR 3.4 /Josh/ua/lunch/ve/VerilogExpress.g 2012-10-25 16:03:27
+    package verilogExpress;
+
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -31,6 +32,10 @@ public class VerilogExpressLexer extends Lexer {
     public static final int T__28=28;
     public static final int T__29=29;
     public static final int T__30=30;
+    public static final int T__31=31;
+    public static final int T__32=32;
+    public static final int T__33=33;
+    public static final int T__34=34;
     public static final int DIV_=4;
     public static final int INT=5;
     public static final int NOT_=6;
@@ -51,15 +56,15 @@ public class VerilogExpressLexer extends Lexer {
     public VerilogExpressLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/Josh/ua/lunch/ve/VerilogExpress.g"; }
+    public String getGrammarFileName() { return "C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g"; }
 
     // $ANTLR start "T__10"
     public final void mT__10() throws RecognitionException {
         try {
             int _type = T__10;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:2:7: ( '!=' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:2:9: '!='
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:6:7: ( '!=' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:6:9: '!='
             {
             match("!="); 
 
@@ -81,8 +86,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:3:7: ( '&&' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:3:9: '&&'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:7:7: ( '&&' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:7:9: '&&'
             {
             match("&&"); 
 
@@ -104,8 +109,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:4:7: ( '&' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:4:9: '&'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:8:7: ( '&' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:8:9: '&'
             {
             match('&'); 
 
@@ -125,8 +130,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:5:7: ( '(' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:5:9: '('
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:9:7: ( '(' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:9:9: '('
             {
             match('('); 
 
@@ -146,8 +151,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:6:7: ( ')' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:6:9: ')'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:10:7: ( ')' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:10:9: ')'
             {
             match(')'); 
 
@@ -167,8 +172,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:7:7: ( '+' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:7:9: '+'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:11:7: ( '+' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:11:9: '+'
             {
             match('+'); 
 
@@ -188,8 +193,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:8:7: ( '-' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:8:9: '-'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:12:7: ( '-' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:12:9: '-'
             {
             match('-'); 
 
@@ -209,8 +214,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:9:7: ( ';' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:9:9: ';'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:13:7: ( ';' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:13:9: ';'
             {
             match(';'); 
 
@@ -230,8 +235,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:10:7: ( '<' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:10:9: '<'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:14:7: ( '<' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:14:9: '<'
             {
             match('<'); 
 
@@ -251,8 +256,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:11:7: ( '<<' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:11:9: '<<'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:15:7: ( '<<' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:15:9: '<<'
             {
             match("<<"); 
 
@@ -274,8 +279,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:12:7: ( '=' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:12:9: '='
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:16:7: ( '=' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:16:9: '='
             {
             match('='); 
 
@@ -295,8 +300,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:13:7: ( '==' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:13:9: '=='
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:17:7: ( '==' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:17:9: '=='
             {
             match("=="); 
 
@@ -318,8 +323,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:14:7: ( '>' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:14:9: '>'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:18:7: ( '>' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:18:9: '>'
             {
             match('>'); 
 
@@ -339,8 +344,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:15:7: ( '>>' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:15:9: '>>'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:19:7: ( '>>' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:19:9: '>>'
             {
             match(">>"); 
 
@@ -362,8 +367,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:16:7: ( '[' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:16:9: '['
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:20:7: ( '[' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:20:9: '['
             {
             match('['); 
 
@@ -383,8 +388,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:17:7: ( ']' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:17:9: ']'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:21:7: ( ']' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:21:9: ']'
             {
             match(']'); 
 
@@ -404,10 +409,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:18:7: ( 'module' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:18:9: 'module'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:22:7: ( 'const' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:22:9: 'const'
             {
-            match("module"); 
+            match("const"); 
 
 
 
@@ -427,10 +432,12 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:19:7: ( '{' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:19:9: '{'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:23:7: ( 'module' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:23:9: 'module'
             {
-            match('{'); 
+            match("module"); 
+
+
 
             }
 
@@ -448,10 +455,12 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:20:7: ( '|' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:20:9: '|'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:24:7: ( 'output' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:24:9: 'output'
             {
-            match('|'); 
+            match("output"); 
+
+
 
             }
 
@@ -469,10 +478,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:21:7: ( '||' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:21:9: '||'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:25:7: ( 'pipe' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:25:9: 'pipe'
             {
-            match("||"); 
+            match("pipe"); 
 
 
 
@@ -492,10 +501,12 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:22:7: ( '}' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:22:9: '}'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:26:7: ( 'reg' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:26:9: 'reg'
             {
-            match('}'); 
+            match("reg"); 
+
+
 
             }
 
@@ -508,13 +519,99 @@ public class VerilogExpressLexer extends Lexer {
     }
     // $ANTLR end "T__30"
 
+    // $ANTLR start "T__31"
+    public final void mT__31() throws RecognitionException {
+        try {
+            int _type = T__31;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:27:7: ( '{' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:27:9: '{'
+            {
+            match('{'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__31"
+
+    // $ANTLR start "T__32"
+    public final void mT__32() throws RecognitionException {
+        try {
+            int _type = T__32;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:28:7: ( '|' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:28:9: '|'
+            {
+            match('|'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__32"
+
+    // $ANTLR start "T__33"
+    public final void mT__33() throws RecognitionException {
+        try {
+            int _type = T__33;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:29:7: ( '||' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:29:9: '||'
+            {
+            match("||"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__33"
+
+    // $ANTLR start "T__34"
+    public final void mT__34() throws RecognitionException {
+        try {
+            int _type = T__34;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:30:7: ( '}' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:30:9: '}'
+            {
+            match('}'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__34"
+
     // $ANTLR start "NOT_"
     public final void mNOT_() throws RecognitionException {
         try {
             int _type = NOT_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:84:7: ( '!' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:84:9: '!'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:7: ( '!' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:9: '!'
             {
             match('!'); 
 
@@ -534,8 +631,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = TIMES_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:85:8: ( '*' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:85:10: '*'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:8: ( '*' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:10: '*'
             {
             match('*'); 
 
@@ -555,8 +652,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = DIV_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:86:6: ( '/' )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:86:8: '/'
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:151:6: ( '/' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:151:8: '/'
             {
             match('/'); 
 
@@ -576,8 +673,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = VAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:88:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:88:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -589,7 +686,7 @@ public class VerilogExpressLexer extends Lexer {
             }
 
 
-            // /Josh/ua/lunch/ve/VerilogExpress.g:88:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -602,7 +699,7 @@ public class VerilogExpressLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /Josh/ua/lunch/ve/VerilogExpress.g:
+            	    // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -639,10 +736,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:91:5: ( ( '0' .. '9' )+ )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:91:7: ( '0' .. '9' )+
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:156:5: ( ( '0' .. '9' )+ )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:156:7: ( '0' .. '9' )+
             {
-            // /Josh/ua/lunch/ve/VerilogExpress.g:91:7: ( '0' .. '9' )+
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:156:7: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -656,7 +753,7 @@ public class VerilogExpressLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /Josh/ua/lunch/ve/VerilogExpress.g:
+            	    // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -697,8 +794,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Josh/ua/lunch/ve/VerilogExpress.g:108:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /Josh/ua/lunch/ve/VerilogExpress.g:108:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:173:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:173:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -724,272 +821,12 @@ public class VerilogExpressLexer extends Lexer {
     // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /Josh/ua/lunch/ve/VerilogExpress.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS )
-        int alt3=27;
-        switch ( input.LA(1) ) {
-        case '!':
-            {
-            int LA3_1 = input.LA(2);
-
-            if ( (LA3_1=='=') ) {
-                alt3=1;
-            }
-            else {
-                alt3=22;
-            }
-            }
-            break;
-        case '&':
-            {
-            int LA3_2 = input.LA(2);
-
-            if ( (LA3_2=='&') ) {
-                alt3=2;
-            }
-            else {
-                alt3=3;
-            }
-            }
-            break;
-        case '(':
-            {
-            alt3=4;
-            }
-            break;
-        case ')':
-            {
-            alt3=5;
-            }
-            break;
-        case '+':
-            {
-            alt3=6;
-            }
-            break;
-        case '-':
-            {
-            alt3=7;
-            }
-            break;
-        case ';':
-            {
-            alt3=8;
-            }
-            break;
-        case '<':
-            {
-            int LA3_8 = input.LA(2);
-
-            if ( (LA3_8=='<') ) {
-                alt3=10;
-            }
-            else {
-                alt3=9;
-            }
-            }
-            break;
-        case '=':
-            {
-            int LA3_9 = input.LA(2);
-
-            if ( (LA3_9=='=') ) {
-                alt3=12;
-            }
-            else {
-                alt3=11;
-            }
-            }
-            break;
-        case '>':
-            {
-            int LA3_10 = input.LA(2);
-
-            if ( (LA3_10=='>') ) {
-                alt3=14;
-            }
-            else {
-                alt3=13;
-            }
-            }
-            break;
-        case '[':
-            {
-            alt3=15;
-            }
-            break;
-        case ']':
-            {
-            alt3=16;
-            }
-            break;
-        case 'm':
-            {
-            int LA3_13 = input.LA(2);
-
-            if ( (LA3_13=='o') ) {
-                int LA3_32 = input.LA(3);
-
-                if ( (LA3_32=='d') ) {
-                    int LA3_35 = input.LA(4);
-
-                    if ( (LA3_35=='u') ) {
-                        int LA3_36 = input.LA(5);
-
-                        if ( (LA3_36=='l') ) {
-                            int LA3_37 = input.LA(6);
-
-                            if ( (LA3_37=='e') ) {
-                                int LA3_38 = input.LA(7);
-
-                                if ( ((LA3_38 >= '0' && LA3_38 <= '9')||(LA3_38 >= 'A' && LA3_38 <= 'Z')||LA3_38=='_'||(LA3_38 >= 'a' && LA3_38 <= 'z')) ) {
-                                    alt3=25;
-                                }
-                                else {
-                                    alt3=17;
-                                }
-                            }
-                            else {
-                                alt3=25;
-                            }
-                        }
-                        else {
-                            alt3=25;
-                        }
-                    }
-                    else {
-                        alt3=25;
-                    }
-                }
-                else {
-                    alt3=25;
-                }
-            }
-            else {
-                alt3=25;
-            }
-            }
-            break;
-        case '{':
-            {
-            alt3=18;
-            }
-            break;
-        case '|':
-            {
-            int LA3_15 = input.LA(2);
-
-            if ( (LA3_15=='|') ) {
-                alt3=20;
-            }
-            else {
-                alt3=19;
-            }
-            }
-            break;
-        case '}':
-            {
-            alt3=21;
-            }
-            break;
-        case '*':
-            {
-            alt3=23;
-            }
-            break;
-        case '/':
-            {
-            alt3=24;
-            }
-            break;
-        case 'A':
-        case 'B':
-        case 'C':
-        case 'D':
-        case 'E':
-        case 'F':
-        case 'G':
-        case 'H':
-        case 'I':
-        case 'J':
-        case 'K':
-        case 'L':
-        case 'M':
-        case 'N':
-        case 'O':
-        case 'P':
-        case 'Q':
-        case 'R':
-        case 'S':
-        case 'T':
-        case 'U':
-        case 'V':
-        case 'W':
-        case 'X':
-        case 'Y':
-        case 'Z':
-        case '_':
-        case 'a':
-        case 'b':
-        case 'c':
-        case 'd':
-        case 'e':
-        case 'f':
-        case 'g':
-        case 'h':
-        case 'i':
-        case 'j':
-        case 'k':
-        case 'l':
-        case 'n':
-        case 'o':
-        case 'p':
-        case 'q':
-        case 'r':
-        case 's':
-        case 't':
-        case 'u':
-        case 'v':
-        case 'w':
-        case 'x':
-        case 'y':
-        case 'z':
-            {
-            alt3=25;
-            }
-            break;
-        case '0':
-        case '1':
-        case '2':
-        case '3':
-        case '4':
-        case '5':
-        case '6':
-        case '7':
-        case '8':
-        case '9':
-            {
-            alt3=26;
-            }
-            break;
-        case '\t':
-        case '\n':
-        case '\r':
-        case ' ':
-            {
-            alt3=27;
-            }
-            break;
-        default:
-            NoViableAltException nvae =
-                new NoViableAltException("", 3, 0, input);
-
-            throw nvae;
-
-        }
-
+        // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS )
+        int alt3=31;
+        alt3 = dfa3.predict(input);
         switch (alt3) {
             case 1 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:10: T__10
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:10: T__10
                 {
                 mT__10(); 
 
@@ -997,7 +834,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:16: T__11
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:16: T__11
                 {
                 mT__11(); 
 
@@ -1005,7 +842,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:22: T__12
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:22: T__12
                 {
                 mT__12(); 
 
@@ -1013,7 +850,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:28: T__13
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:28: T__13
                 {
                 mT__13(); 
 
@@ -1021,7 +858,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:34: T__14
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:34: T__14
                 {
                 mT__14(); 
 
@@ -1029,7 +866,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:40: T__15
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:40: T__15
                 {
                 mT__15(); 
 
@@ -1037,7 +874,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:46: T__16
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:46: T__16
                 {
                 mT__16(); 
 
@@ -1045,7 +882,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:52: T__17
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:52: T__17
                 {
                 mT__17(); 
 
@@ -1053,7 +890,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:58: T__18
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:58: T__18
                 {
                 mT__18(); 
 
@@ -1061,7 +898,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:64: T__19
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:64: T__19
                 {
                 mT__19(); 
 
@@ -1069,7 +906,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:70: T__20
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:70: T__20
                 {
                 mT__20(); 
 
@@ -1077,7 +914,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:76: T__21
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:76: T__21
                 {
                 mT__21(); 
 
@@ -1085,7 +922,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:82: T__22
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:82: T__22
                 {
                 mT__22(); 
 
@@ -1093,7 +930,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:88: T__23
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:88: T__23
                 {
                 mT__23(); 
 
@@ -1101,7 +938,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:94: T__24
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:94: T__24
                 {
                 mT__24(); 
 
@@ -1109,7 +946,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:100: T__25
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:100: T__25
                 {
                 mT__25(); 
 
@@ -1117,7 +954,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:106: T__26
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:106: T__26
                 {
                 mT__26(); 
 
@@ -1125,7 +962,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:112: T__27
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:112: T__27
                 {
                 mT__27(); 
 
@@ -1133,7 +970,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:118: T__28
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:118: T__28
                 {
                 mT__28(); 
 
@@ -1141,7 +978,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 20 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:124: T__29
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:124: T__29
                 {
                 mT__29(); 
 
@@ -1149,7 +986,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 21 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:130: T__30
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:130: T__30
                 {
                 mT__30(); 
 
@@ -1157,47 +994,79 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 22 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:136: NOT_
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:136: T__31
+                {
+                mT__31(); 
+
+
+                }
+                break;
+            case 23 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:142: T__32
+                {
+                mT__32(); 
+
+
+                }
+                break;
+            case 24 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:148: T__33
+                {
+                mT__33(); 
+
+
+                }
+                break;
+            case 25 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:154: T__34
+                {
+                mT__34(); 
+
+
+                }
+                break;
+            case 26 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:160: NOT_
                 {
                 mNOT_(); 
 
 
                 }
                 break;
-            case 23 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:141: TIMES_
+            case 27 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:165: TIMES_
                 {
                 mTIMES_(); 
 
 
                 }
                 break;
-            case 24 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:148: DIV_
+            case 28 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:172: DIV_
                 {
                 mDIV_(); 
 
 
                 }
                 break;
-            case 25 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:153: VAR
+            case 29 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:177: VAR
                 {
                 mVAR(); 
 
 
                 }
                 break;
-            case 26 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:157: INT
+            case 30 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:181: INT
                 {
                 mINT(); 
 
 
                 }
                 break;
-            case 27 :
-                // /Josh/ua/lunch/ve/VerilogExpress.g:1:161: WS
+            case 31 :
+                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:185: WS
                 {
                 mWS(); 
 
@@ -1210,6 +1079,132 @@ public class VerilogExpressLexer extends Lexer {
     }
 
 
+    protected DFA3 dfa3 = new DFA3(this);
+    static final String DFA3_eotS =
+        "\1\uffff\1\33\1\35\5\uffff\1\37\1\41\1\43\2\uffff\5\27\1\uffff\1"+
+        "\52\20\uffff\5\27\2\uffff\4\27\1\64\3\27\1\70\1\uffff\1\71\2\27"+
+        "\2\uffff\1\74\1\75\2\uffff";
+    static final String DFA3_eofS =
+        "\76\uffff";
+    static final String DFA3_minS =
+        "\1\11\1\75\1\46\5\uffff\1\74\1\75\1\76\2\uffff\2\157\1\165\1\151"+
+        "\1\145\1\uffff\1\174\20\uffff\1\156\1\144\1\164\1\160\1\147\2\uffff"+
+        "\1\163\1\165\1\160\1\145\1\60\1\164\1\154\1\165\1\60\1\uffff\1\60"+
+        "\1\145\1\164\2\uffff\2\60\2\uffff";
+    static final String DFA3_maxS =
+        "\1\175\1\75\1\46\5\uffff\1\74\1\75\1\76\2\uffff\2\157\1\165\1\151"+
+        "\1\145\1\uffff\1\174\20\uffff\1\156\1\144\1\164\1\160\1\147\2\uffff"+
+        "\1\163\1\165\1\160\1\145\1\172\1\164\1\154\1\165\1\172\1\uffff\1"+
+        "\172\1\145\1\164\2\uffff\2\172\2\uffff";
+    static final String DFA3_acceptS =
+        "\3\uffff\1\4\1\5\1\6\1\7\1\10\3\uffff\1\17\1\20\5\uffff\1\26\1\uffff"+
+        "\1\31\1\33\1\34\1\35\1\36\1\37\1\1\1\32\1\2\1\3\1\12\1\11\1\14\1"+
+        "\13\1\16\1\15\5\uffff\1\30\1\27\11\uffff\1\25\3\uffff\1\24\1\21"+
+        "\2\uffff\1\22\1\23";
+    static final String DFA3_specialS =
+        "\76\uffff}>";
+    static final String[] DFA3_transitionS = {
+            "\2\31\2\uffff\1\31\22\uffff\1\31\1\1\4\uffff\1\2\1\uffff\1\3"+
+            "\1\4\1\25\1\5\1\uffff\1\6\1\uffff\1\26\12\30\1\uffff\1\7\1\10"+
+            "\1\11\1\12\2\uffff\32\27\1\13\1\uffff\1\14\1\uffff\1\27\1\uffff"+
+            "\2\27\1\15\11\27\1\16\1\27\1\17\1\20\1\27\1\21\10\27\1\22\1"+
+            "\23\1\24",
+            "\1\32",
+            "\1\34",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\36",
+            "\1\40",
+            "\1\42",
+            "",
+            "",
+            "\1\44",
+            "\1\45",
+            "\1\46",
+            "\1\47",
+            "\1\50",
+            "",
+            "\1\51",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\53",
+            "\1\54",
+            "\1\55",
+            "\1\56",
+            "\1\57",
+            "",
+            "",
+            "\1\60",
+            "\1\61",
+            "\1\62",
+            "\1\63",
+            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
+            "\1\65",
+            "\1\66",
+            "\1\67",
+            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
+            "",
+            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
+            "\1\72",
+            "\1\73",
+            "",
+            "",
+            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
+            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
+            "",
+            ""
+    };
+
+    static final short[] DFA3_eot = DFA.unpackEncodedString(DFA3_eotS);
+    static final short[] DFA3_eof = DFA.unpackEncodedString(DFA3_eofS);
+    static final char[] DFA3_min = DFA.unpackEncodedStringToUnsignedChars(DFA3_minS);
+    static final char[] DFA3_max = DFA.unpackEncodedStringToUnsignedChars(DFA3_maxS);
+    static final short[] DFA3_accept = DFA.unpackEncodedString(DFA3_acceptS);
+    static final short[] DFA3_special = DFA.unpackEncodedString(DFA3_specialS);
+    static final short[][] DFA3_transition;
+
+    static {
+        int numStates = DFA3_transitionS.length;
+        DFA3_transition = new short[numStates][];
+        for (int i=0; i<numStates; i++) {
+            DFA3_transition[i] = DFA.unpackEncodedString(DFA3_transitionS[i]);
+        }
+    }
+
+    class DFA3 extends DFA {
+
+        public DFA3(BaseRecognizer recognizer) {
+            this.recognizer = recognizer;
+            this.decisionNumber = 3;
+            this.eot = DFA3_eot;
+            this.eof = DFA3_eof;
+            this.min = DFA3_min;
+            this.max = DFA3_max;
+            this.accept = DFA3_accept;
+            this.special = DFA3_special;
+            this.transition = DFA3_transition;
+        }
+        public String getDescription() {
+            return "1:1: Tokens : ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS );";
+        }
+    }
  
 
 }

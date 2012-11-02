@@ -118,6 +118,7 @@ public class VerilogFileModule extends DoBlock{
 
 	public void addOutputPort(OutputPort outputPort) {
 		outputPorts.add( outputPort );
+		outputPort.setFileModule( this );
 	}
 
 }
