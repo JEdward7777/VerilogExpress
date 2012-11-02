@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // $ANTLR 3.4 C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g 2012-11-02 12:40:39
+=======
+// $ANTLR 3.4 C:\\docs\\Google Drive\\VE Briefcase\\ve\\VerilogExpress.g 2012-10-31 19:33:54
+>>>>>>> origin/master
 
     package verilogExpress;
     
