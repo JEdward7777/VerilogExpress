@@ -8,14 +8,13 @@ abstract public class DoBlock extends Doable {
 	LinkedList< Doable > listToDo = new LinkedList< Doable >();
 
 	HashMap< String, Variable > variables = new HashMap< String, Variable >();
-	
-	//todo: Somehow the names of the variables needs to be declared.
-	
-	public DoBlock(  ){
-	}
+
 	
 	public void addVarToBlock( Variable newVariable ){
-		variables.put( newVariable.getBasename(), newVariable );
+		if( !variables.containsKey( newVariable.getBasename() ) ){
+			variables.put( newVariable.getBasename(), newVariable );
+			newVariable.setBlock( this );
+		}
 	}
 	
 	
@@ -25,7 +24,7 @@ abstract public class DoBlock extends Doable {
 	}
 
 
-	abstract public String childActiveSignal(Doable doable);
+	abstract public String getChildActiveSignal(Doable doable);
 	
 	public String getChildNum( Doable child ){
 		return "" + listToDo.indexOf( child );

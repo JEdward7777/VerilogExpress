@@ -42,23 +42,13 @@ public class DoAssign extends Doable implements DataTarget, DataSource {
 	public String getSourceIsReadySignal() {
 		//our data as a source is ready when we are active.
 		//and our source is ready too
-		return "(" + parrent.childActiveSignal( this ) + " && " + source.getSourceIsReadySignal() + ")";
+		return "(" + getActiveSignal() + " && " + source.getSourceIsReadySignal() + ")";
 	}
-
-
-
 
 	@Override
 	public String getTargetAchnolageSignal(DataSource sourceToAchnolage) {
-		return target.getTargetAchnolageSignal( this );
+		return "(" + getActiveSignal() + " && " + target.getTargetAchnolageSignal( this ) + ")";
 	}
-
-
-	@Override
-	String getActiveSignal() {
-		return parrent.childActiveSignal(this);
-	}
-
 
 
 	@Override

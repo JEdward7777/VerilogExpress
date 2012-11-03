@@ -16,13 +16,8 @@ public class SequentualDoer extends DoBlock {
 
 
 	@Override
-	public String childActiveSignal(Doable doable) {
+	public String getChildActiveSignal(Doable doable) {
 		return getActiveWireName( doable );
-	}
-
-	@Override
-	String getActiveSignal() {
-		return parrent.childActiveSignal( this );
 	}
 
 	private static String getActiveWireName( Doable doable ){ return doable.getUniqueName() + "_IsActiveWire"; }
@@ -72,11 +67,11 @@ public class SequentualDoer extends DoBlock {
 		if( !listToDo.isEmpty() ){
 		
 			result += indent + "always @( posedge " + parrent.getClockSignal() + " )\n";
-			result += indent + "if( " + parrent.getResetSignal() + " || !( " + parrent.childActiveSignal(this) + ") )begin\n";
+			result += indent + "if( " + parrent.getResetSignal() + " || !( " + getActiveSignal()+ ") )begin\n";
 			result += indent + "   " + getRegName( this ) + " <= " + getResetParamName(this) + ";\n";
 			result += indent + "end else case( " + getRegName( this ) + ")\n";
 			result += indent + "   " + getResetParamName(this) + ": begin\n";
-			result += indent + "       if( " + parrent.childActiveSignal(this) + " )begin\n";
+			result += indent + "       if( " + getActiveSignal() + " )begin\n";
 			result += indent + "          " + getRegName( this ) + " <= " + getParamName( listToDo.getFirst() ) + ";\n";
 			result += indent + "       end\n";
 			result += indent + "   end\n";

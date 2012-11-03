@@ -2,22 +2,26 @@ package verilogExpress;
 
 import java.util.LinkedList;
 
-public class InputPort implements DataSource, VerilogCodeSource {
+public class InputPort extends Variable implements DataSource, VerilogCodeSource {
 	
-	String portName;
 	LinkedList< DataTarget > targets = new LinkedList< DataTarget >();
 	
 	public InputPort( String newPortName ){
-		portName = newPortName;
+		super( newPortName );
+	}
+	
+	public InputPort( String newPortName, DoBlock block ){
+		super( newPortName );
+		setBlock( block );
 	}
 
 	@Override
-	public String getSourceIsReadySignal() { return portName + "IsReadyInput"; }
+	public String getSourceIsReadySignal() { return getUniqueBasename() + "IsReadyInput"; }
 
 	@Override
-	public String getSourceDataSignal() {    return portName + "DataInput"; }
+	public String getSourceDataSignal() {    return getUniqueBasename() + "DataInput"; }
 	
-	public String getInputAckSignal(){       return portName + "AckOutput"; }
+	public String getInputAckSignal(){       return getUniqueBasename() + "AckOutput"; }
 
 	public String generateParamList(){
 		return getSourceIsReadySignal() + ",\n"
@@ -66,6 +70,21 @@ public class InputPort implements DataSource, VerilogCodeSource {
 		result = "(" + result + ")";
 		
 		return result;
+	}
+
+	@Override
+	public void connectDataSource(DataSource newSource) {
+		throw new NullPointerException( "Can not connect input as datatarget" );
+	}
+
+	@Override
+	public String getTargetAchnolageSignal(DataSource sourceToAchnolage) {
+		throw new NullPointerException( "Can not connect input as datatarget" );
+	}
+
+	@Override
+	public String getCodename() {
+		return basename;
 	}
 
 

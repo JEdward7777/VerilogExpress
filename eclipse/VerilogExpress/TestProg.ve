@@ -1,13 +1,4 @@
-module testModule{
-	reg sam = 3;
-	sam = stdin;
-	reg bob = 4;
-	bob = sam + 1;
-	reg sue = 6;
-	{
-		reg bob = 5;
-		bob = sam;
-		sue = bob;
-	}
-	stdout = bob;
-}
+module testModule[
+	input sue;
+	stdout = sue;
+]

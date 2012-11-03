@@ -24,15 +24,10 @@ public class ParallelDoer extends DoBlock {
 	}
 
 	@Override
-	public String childActiveSignal(Doable doable) {
-		//Child is active if we are active.
-		return parrent.childActiveSignal(this);
+	public String getChildActiveSignal(Doable doable) {
+		return getActiveSignal();
 	}
 
-	@Override
-	String getActiveSignal() {
-		return parrent.childActiveSignal(this);
-	}
 
 	@Override
 	String getDescribeName() {

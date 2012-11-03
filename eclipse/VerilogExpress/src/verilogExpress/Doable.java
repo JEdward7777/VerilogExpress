@@ -8,7 +8,13 @@ abstract public class Doable implements VerilogCodeSource {
 	}
 	
 	
-	abstract String getActiveSignal();
+	String getActiveSignal(){
+		String result = "1";
+		if( parrent != null ){
+			result = parrent.getChildActiveSignal( this );
+		}
+		return result;
+	}
 	abstract String getDoneSignal();
 	
 	public String getUniqueName(){

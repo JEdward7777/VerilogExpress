@@ -1,4 +1,4 @@
-// $ANTLR 3.4 C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g 2012-11-03 11:11:12
+// $ANTLR 3.4 C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g 2012-11-03 17:33:36
 
     package verilogExpress;
     
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 @SuppressWarnings({"all", "warnings", "unchecked"})
 public class VerilogExpressParser extends Parser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "DIV_", "INT", "NOT_", "TIMES_", "VAR", "WS", "'!='", "'&&'", "'&'", "'('", "')'", "'+'", "'-'", "';'", "'<'", "'<<'", "'='", "'=='", "'>'", "'>>'", "'['", "']'", "'const'", "'input'", "'module'", "'output'", "'pipe'", "'reg'", "'stdin'", "'stdout'", "'{'", "'|'", "'||'", "'}'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "DIV_", "INT", "NOT_", "TIMES_", "VAR", "WS", "'!='", "'&&'", "'&'", "'('", "')'", "'+'", "'-'", "';'", "'<'", "'<<'", "'='", "'=='", "'>'", "'>>'", "'['", "']'", "'const'", "'else'", "'if'", "'input'", "'module'", "'output'", "'pipe'", "'reg'", "'stdin'", "'stdout'", "'{'", "'|'", "'||'", "'}'"
     };
 
     public static final int EOF=-1;
@@ -45,6 +45,8 @@ public class VerilogExpressParser extends Parser {
     public static final int T__35=35;
     public static final int T__36=36;
     public static final int T__37=37;
+    public static final int T__38=38;
+    public static final int T__39=39;
     public static final int DIV_=4;
     public static final int INT=5;
     public static final int NOT_=6;
@@ -143,7 +145,7 @@ public class VerilogExpressParser extends Parser {
             // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:34:2: ( 'module' VAR doBlock )
             // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:34:4: 'module' VAR doBlock
             {
-            match(input,28,FOLLOW_28_in_moduleDec58); 
+            match(input,30,FOLLOW_30_in_moduleDec58); 
 
             VAR2=(Token)match(input,VAR,FOLLOW_VAR_in_moduleDec60); 
 
@@ -205,7 +207,7 @@ public class VerilogExpressParser extends Parser {
             if ( (LA1_0==24) ) {
                 alt1=1;
             }
-            else if ( (LA1_0==34) ) {
+            else if ( (LA1_0==36) ) {
                 alt1=2;
             }
             else {
@@ -287,10 +289,10 @@ public class VerilogExpressParser extends Parser {
                 int alt2=3;
                 int LA2_0 = input.LA(1);
 
-                if ( (LA2_0==VAR||LA2_0==24||(LA2_0 >= 33 && LA2_0 <= 34)) ) {
+                if ( (LA2_0==VAR||LA2_0==24||LA2_0==28||(LA2_0 >= 35 && LA2_0 <= 36)) ) {
                     alt2=1;
                 }
-                else if ( ((LA2_0 >= 26 && LA2_0 <= 27)||(LA2_0 >= 29 && LA2_0 <= 31)) ) {
+                else if ( (LA2_0==26||LA2_0==29||(LA2_0 >= 31 && LA2_0 <= 33)) ) {
                     alt2=2;
                 }
 
@@ -369,7 +371,7 @@ public class VerilogExpressParser extends Parser {
             	   	currentBlock = block;
             	 
 
-            match(input,34,FOLLOW_34_in_sequentualDoer153); 
+            match(input,36,FOLLOW_36_in_sequentualDoer153); 
 
             // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:71:7: ( doAble | varDec )+
             int cnt3=0;
@@ -378,10 +380,10 @@ public class VerilogExpressParser extends Parser {
                 int alt3=3;
                 int LA3_0 = input.LA(1);
 
-                if ( (LA3_0==VAR||LA3_0==24||(LA3_0 >= 33 && LA3_0 <= 34)) ) {
+                if ( (LA3_0==VAR||LA3_0==24||LA3_0==28||(LA3_0 >= 35 && LA3_0 <= 36)) ) {
                     alt3=1;
                 }
-                else if ( ((LA3_0 >= 26 && LA3_0 <= 27)||(LA3_0 >= 29 && LA3_0 <= 31)) ) {
+                else if ( (LA3_0==26||LA3_0==29||(LA3_0 >= 31 && LA3_0 <= 33)) ) {
                     alt3=2;
                 }
 
@@ -422,7 +424,7 @@ public class VerilogExpressParser extends Parser {
             } while (true);
 
 
-            match(input,37,FOLLOW_37_in_sequentualDoer170); 
+            match(input,39,FOLLOW_39_in_sequentualDoer170); 
 
             }
 
@@ -456,12 +458,12 @@ public class VerilogExpressParser extends Parser {
             // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:76:2: ( 'reg' VAR '=' INT ';' | 'pipe' VAR ';' | 'const' VAR '=' INT ';' | 'output' VAR ';' | 'input' VAR ';' )
             int alt4=5;
             switch ( input.LA(1) ) {
-            case 31:
+            case 33:
                 {
                 alt4=1;
                 }
                 break;
-            case 30:
+            case 32:
                 {
                 alt4=2;
                 }
@@ -471,12 +473,12 @@ public class VerilogExpressParser extends Parser {
                 alt4=3;
                 }
                 break;
-            case 29:
+            case 31:
                 {
                 alt4=4;
                 }
                 break;
-            case 27:
+            case 29:
                 {
                 alt4=5;
                 }
@@ -493,7 +495,7 @@ public class VerilogExpressParser extends Parser {
                 case 1 :
                     // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:76:4: 'reg' VAR '=' INT ';'
                     {
-                    match(input,31,FOLLOW_31_in_varDec182); 
+                    match(input,33,FOLLOW_33_in_varDec182); 
 
                     VAR8=(Token)match(input,VAR,FOLLOW_VAR_in_varDec184); 
 
@@ -510,7 +512,7 @@ public class VerilogExpressParser extends Parser {
                 case 2 :
                     // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:77:4: 'pipe' VAR ';'
                     {
-                    match(input,30,FOLLOW_30_in_varDec197); 
+                    match(input,32,FOLLOW_32_in_varDec197); 
 
                     VAR10=(Token)match(input,VAR,FOLLOW_VAR_in_varDec199); 
 
@@ -540,14 +542,14 @@ public class VerilogExpressParser extends Parser {
                 case 4 :
                     // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:79:4: 'output' VAR ';'
                     {
-                    match(input,29,FOLLOW_29_in_varDec229); 
+                    match(input,31,FOLLOW_31_in_varDec229); 
 
                     VAR13=(Token)match(input,VAR,FOLLOW_VAR_in_varDec231); 
 
                     match(input,17,FOLLOW_17_in_varDec233); 
 
                      
-                    		OutputPort newOutput = new OutputPort( (VAR13!=null?VAR13.getText():null) ); 
+                    		OutputPort newOutput = new OutputPort( (VAR13!=null?VAR13.getText():null), currentBlock ); 
                     		outputPorts.add( newOutput );
                     	
 
@@ -556,14 +558,14 @@ public class VerilogExpressParser extends Parser {
                 case 5 :
                     // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:83:4: 'input' VAR ';'
                     {
-                    match(input,27,FOLLOW_27_in_varDec245); 
+                    match(input,29,FOLLOW_29_in_varDec245); 
 
                     VAR14=(Token)match(input,VAR,FOLLOW_VAR_in_varDec247); 
 
                     match(input,17,FOLLOW_17_in_varDec249); 
 
 
-                    		InputPort newInput = new InputPort( (VAR14!=null?VAR14.getText():null) );
+                    		InputPort newInput = new InputPort( (VAR14!=null?VAR14.getText():null), currentBlock );
                     		inputPorts.add( newInput );
                     	
 
@@ -587,7 +589,7 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "doAble"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:89:1: doAble returns [ Doable doable ] : ( doBlock | doAssign );
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:89:1: doAble returns [ Doable doable ] : ( doBlock | doAssign | doIf );
     public final Doable doAble() throws RecognitionException {
         Doable doable = null;
 
@@ -596,25 +598,38 @@ public class VerilogExpressParser extends Parser {
 
         DoAssign doAssign16 =null;
 
+        DoIf doIf17 =null;
+
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:90:2: ( doBlock | doAssign )
-            int alt5=2;
-            int LA5_0 = input.LA(1);
-
-            if ( (LA5_0==24||LA5_0==34) ) {
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:90:2: ( doBlock | doAssign | doIf )
+            int alt5=3;
+            switch ( input.LA(1) ) {
+            case 24:
+            case 36:
+                {
                 alt5=1;
-            }
-            else if ( (LA5_0==VAR||LA5_0==33) ) {
+                }
+                break;
+            case VAR:
+            case 35:
+                {
                 alt5=2;
-            }
-            else {
+                }
+                break;
+            case 28:
+                {
+                alt5=3;
+                }
+                break;
+            default:
                 NoViableAltException nvae =
                     new NoViableAltException("", 5, 0, input);
 
                 throw nvae;
 
             }
+
             switch (alt5) {
                 case 1 :
                     // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:90:4: doBlock
@@ -642,6 +657,19 @@ public class VerilogExpressParser extends Parser {
 
                     }
                     break;
+                case 3 :
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:92:4: doIf
+                    {
+                    pushFollow(FOLLOW_doIf_in_doAble287);
+                    doIf17=doIf();
+
+                    state._fsp--;
+
+
+                     doable = doIf17; 
+
+                    }
+                    break;
 
             }
         }
@@ -659,40 +687,126 @@ public class VerilogExpressParser extends Parser {
 
 
 
+    // $ANTLR start "doIf"
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:95:1: doIf returns [ DoIf doIf ] : 'if' '(' expression ')' ifDo= doAble ( options {greedy=true; } : 'else' elseDo= doAble )? ;
+    public final DoIf doIf() throws RecognitionException {
+        DoIf doIf = null;
+
+
+        Doable ifDo =null;
+
+        Doable elseDo =null;
+
+        DataSource expression18 =null;
+
+
+        try {
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:96:2: ( 'if' '(' expression ')' ifDo= doAble ( options {greedy=true; } : 'else' elseDo= doAble )? )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:97:2: 'if' '(' expression ')' ifDo= doAble ( options {greedy=true; } : 'else' elseDo= doAble )?
+            {
+             doIf = new DoIf(); 
+
+            match(input,28,FOLLOW_28_in_doIf313); 
+
+            match(input,13,FOLLOW_13_in_doIf315); 
+
+            pushFollow(FOLLOW_expression_in_doIf317);
+            expression18=expression();
+
+            state._fsp--;
+
+
+            match(input,14,FOLLOW_14_in_doIf319); 
+
+            pushFollow(FOLLOW_doAble_in_doIf323);
+            ifDo=doAble();
+
+            state._fsp--;
+
+
+
+            		doIf.connectDataSource( expression18 );
+            		doIf.connectIfDo( ifDo );
+            	
+
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:102:2: ( options {greedy=true; } : 'else' elseDo= doAble )?
+            int alt6=2;
+            int LA6_0 = input.LA(1);
+
+            if ( (LA6_0==27) ) {
+                alt6=1;
+            }
+            switch (alt6) {
+                case 1 :
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:102:28: 'else' elseDo= doAble
+                    {
+                    match(input,27,FOLLOW_27_in_doIf338); 
+
+                    pushFollow(FOLLOW_doAble_in_doIf342);
+                    elseDo=doAble();
+
+                    state._fsp--;
+
+
+                     doIf.connectElseDo( elseDo ); 
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+
+        finally {
+        	// do for sure before leaving
+        }
+        return doIf;
+    }
+    // $ANTLR end "doIf"
+
+
+
     // $ANTLR start "doAssign"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:96:1: doAssign returns [ DoAssign assignment ] : dataTarget '=' expression ';' ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:105:1: doAssign returns [ DoAssign assignment ] : dataTarget '=' expression ';' ;
     public final DoAssign doAssign() throws RecognitionException {
         DoAssign assignment = null;
 
 
-        DataSource expression17 =null;
+        DataSource expression19 =null;
 
-        DataTarget dataTarget18 =null;
+        DataTarget dataTarget20 =null;
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:97:2: ( dataTarget '=' expression ';' )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:97:4: dataTarget '=' expression ';'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:106:2: ( dataTarget '=' expression ';' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:106:4: dataTarget '=' expression ';'
             {
-            pushFollow(FOLLOW_dataTarget_in_doAssign302);
-            dataTarget18=dataTarget();
+            pushFollow(FOLLOW_dataTarget_in_doAssign363);
+            dataTarget20=dataTarget();
 
             state._fsp--;
 
 
-            match(input,20,FOLLOW_20_in_doAssign304); 
+            match(input,20,FOLLOW_20_in_doAssign365); 
 
-            pushFollow(FOLLOW_expression_in_doAssign306);
-            expression17=expression();
+            pushFollow(FOLLOW_expression_in_doAssign367);
+            expression19=expression();
 
             state._fsp--;
 
 
-            match(input,17,FOLLOW_17_in_doAssign308); 
+            match(input,17,FOLLOW_17_in_doAssign369); 
 
              
-            		assignment = new DoAssign( expression17 );
-            		dataTarget18.connectDataSource( assignment );
+            		assignment = new DoAssign( expression19 );
+            		dataTarget20.connectDataSource( assignment );
             		
 
             }
@@ -713,45 +827,45 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "dataTarget"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:103:1: dataTarget returns [ DataTarget target ] : ( VAR | 'stdout' );
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:112:1: dataTarget returns [ DataTarget target ] : ( VAR | 'stdout' );
     public final DataTarget dataTarget() throws RecognitionException {
         DataTarget target = null;
 
 
-        Token VAR19=null;
+        Token VAR21=null;
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:104:2: ( VAR | 'stdout' )
-            int alt6=2;
-            int LA6_0 = input.LA(1);
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:113:2: ( VAR | 'stdout' )
+            int alt7=2;
+            int LA7_0 = input.LA(1);
 
-            if ( (LA6_0==VAR) ) {
-                alt6=1;
+            if ( (LA7_0==VAR) ) {
+                alt7=1;
             }
-            else if ( (LA6_0==33) ) {
-                alt6=2;
+            else if ( (LA7_0==35) ) {
+                alt7=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 6, 0, input);
+                    new NoViableAltException("", 7, 0, input);
 
                 throw nvae;
 
             }
-            switch (alt6) {
+            switch (alt7) {
                 case 1 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:104:4: VAR
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:113:4: VAR
                     {
-                    VAR19=(Token)match(input,VAR,FOLLOW_VAR_in_dataTarget326); 
+                    VAR21=(Token)match(input,VAR,FOLLOW_VAR_in_dataTarget387); 
 
-                     target = currentBlock.getVar( (VAR19!=null?VAR19.getText():null) ); 
+                     target = currentBlock.getVar( (VAR21!=null?VAR21.getText():null) ); 
 
                     }
                     break;
                 case 2 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:105:4: 'stdout'
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:114:4: 'stdout'
                     {
-                    match(input,33,FOLLOW_33_in_dataTarget339); 
+                    match(input,35,FOLLOW_35_in_dataTarget400); 
 
                      target = verilogSystem.getStdOut(); 
 
@@ -775,90 +889,90 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "atom"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:114:1: atom returns [ DataSource d ] : ( VAR | INT | 'stdin' | '(' expression ')' );
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:123:1: atom returns [ DataSource d ] : ( VAR | INT | 'stdin' | '(' expression ')' );
     public final DataSource atom() throws RecognitionException {
         DataSource d = null;
 
 
-        Token VAR20=null;
-        Token INT21=null;
-        DataSource expression22 =null;
+        Token VAR22=null;
+        Token INT23=null;
+        DataSource expression24 =null;
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:115:2: ( VAR | INT | 'stdin' | '(' expression ')' )
-            int alt7=4;
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:124:2: ( VAR | INT | 'stdin' | '(' expression ')' )
+            int alt8=4;
             switch ( input.LA(1) ) {
             case VAR:
                 {
-                alt7=1;
+                alt8=1;
                 }
                 break;
             case INT:
                 {
-                alt7=2;
+                alt8=2;
                 }
                 break;
-            case 32:
+            case 34:
                 {
-                alt7=3;
+                alt8=3;
                 }
                 break;
             case 13:
                 {
-                alt7=4;
+                alt8=4;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 7, 0, input);
+                    new NoViableAltException("", 8, 0, input);
 
                 throw nvae;
 
             }
 
-            switch (alt7) {
+            switch (alt8) {
                 case 1 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:115:4: VAR
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:124:4: VAR
                     {
-                    VAR20=(Token)match(input,VAR,FOLLOW_VAR_in_atom364); 
+                    VAR22=(Token)match(input,VAR,FOLLOW_VAR_in_atom425); 
 
-                     d = currentBlock.getVar( VAR20.getText() ); 
+                     d = currentBlock.getVar( VAR22.getText() ); 
 
                     }
                     break;
                 case 2 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:116:4: INT
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:125:4: INT
                     {
-                    INT21=(Token)match(input,INT,FOLLOW_INT_in_atom371); 
+                    INT23=(Token)match(input,INT,FOLLOW_INT_in_atom432); 
 
-                     d = new ConstVar( "AnonInt" + (anonConstNum++), INT21.getText(), currentBlock ); 
+                     d = new ConstVar( "AnonInt" + (anonConstNum++), INT23.getText(), currentBlock ); 
 
                     }
                     break;
                 case 3 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:118:4: 'stdin'
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:127:4: 'stdin'
                     {
-                    match(input,32,FOLLOW_32_in_atom379); 
+                    match(input,34,FOLLOW_34_in_atom440); 
 
                      d = verilogSystem.getStdIn(); 
 
                     }
                     break;
                 case 4 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:119:4: '(' expression ')'
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:128:4: '(' expression ')'
                     {
-                    match(input,13,FOLLOW_13_in_atom387); 
+                    match(input,13,FOLLOW_13_in_atom448); 
 
-                    pushFollow(FOLLOW_expression_in_atom389);
-                    expression22=expression();
+                    pushFollow(FOLLOW_expression_in_atom450);
+                    expression24=expression();
 
                     state._fsp--;
 
 
-                    match(input,14,FOLLOW_14_in_atom391); 
+                    match(input,14,FOLLOW_14_in_atom452); 
 
-                    d = expression22; 
+                    d = expression24; 
 
                     }
                     break;
@@ -880,30 +994,30 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "notExp"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:124:1: notExp returns [ DataSource d ] : ( NOT_ )? atom ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:133:1: notExp returns [ DataSource d ] : ( NOT_ )? atom ;
     public final DataSource notExp() throws RecognitionException {
         DataSource d = null;
 
 
-        DataSource atom23 =null;
+        DataSource atom25 =null;
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:125:2: ( ( NOT_ )? atom )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:125:4: ( NOT_ )? atom
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:134:2: ( ( NOT_ )? atom )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:134:4: ( NOT_ )? atom
             {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:125:4: ( NOT_ )?
-            int alt8=2;
-            int LA8_0 = input.LA(1);
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:134:4: ( NOT_ )?
+            int alt9=2;
+            int LA9_0 = input.LA(1);
 
-            if ( (LA8_0==NOT_) ) {
-                alt8=1;
+            if ( (LA9_0==NOT_) ) {
+                alt9=1;
             }
-            switch (alt8) {
+            switch (alt9) {
                 case 1 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:125:4: NOT_
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:134:4: NOT_
                     {
-                    match(input,NOT_,FOLLOW_NOT__in_notExp410); 
+                    match(input,NOT_,FOLLOW_NOT__in_notExp471); 
 
                     }
                     break;
@@ -911,13 +1025,13 @@ public class VerilogExpressParser extends Parser {
             }
 
 
-            pushFollow(FOLLOW_atom_in_notExp413);
-            atom23=atom();
+            pushFollow(FOLLOW_atom_in_notExp474);
+            atom25=atom();
 
             state._fsp--;
 
 
-             d = new CalcUnaryOpperation( "!", atom23, currentBlock ); 
+             d = new CalcUnaryOpperation( "!", atom25, currentBlock ); 
 
             }
 
@@ -937,7 +1051,7 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "multExp"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:128:1: multExp returns [ DataSource d ] : arg1= notExp ( (op= TIMES_ |op= DIV_ ) arg2= notExp )* ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:137:1: multExp returns [ DataSource d ] : arg1= notExp ( (op= TIMES_ |op= DIV_ ) arg2= notExp )* ;
     public final DataSource multExp() throws RecognitionException {
         DataSource d = null;
 
@@ -949,10 +1063,10 @@ public class VerilogExpressParser extends Parser {
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:129:2: (arg1= notExp ( (op= TIMES_ |op= DIV_ ) arg2= notExp )* )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:129:3: arg1= notExp ( (op= TIMES_ |op= DIV_ ) arg2= notExp )*
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:138:2: (arg1= notExp ( (op= TIMES_ |op= DIV_ ) arg2= notExp )* )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:138:3: arg1= notExp ( (op= TIMES_ |op= DIV_ ) arg2= notExp )*
             {
-            pushFollow(FOLLOW_notExp_in_multExp432);
+            pushFollow(FOLLOW_notExp_in_multExp493);
             arg1=notExp();
 
             state._fsp--;
@@ -960,50 +1074,50 @@ public class VerilogExpressParser extends Parser {
 
             d = arg1;
 
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:129:28: ( (op= TIMES_ |op= DIV_ ) arg2= notExp )*
-            loop10:
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:138:28: ( (op= TIMES_ |op= DIV_ ) arg2= notExp )*
+            loop11:
             do {
-                int alt10=2;
-                int LA10_0 = input.LA(1);
+                int alt11=2;
+                int LA11_0 = input.LA(1);
 
-                if ( (LA10_0==DIV_||LA10_0==TIMES_) ) {
-                    alt10=1;
+                if ( (LA11_0==DIV_||LA11_0==TIMES_) ) {
+                    alt11=1;
                 }
 
 
-                switch (alt10) {
+                switch (alt11) {
             	case 1 :
-            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:129:30: (op= TIMES_ |op= DIV_ ) arg2= notExp
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:138:30: (op= TIMES_ |op= DIV_ ) arg2= notExp
             	    {
-            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:129:30: (op= TIMES_ |op= DIV_ )
-            	    int alt9=2;
-            	    int LA9_0 = input.LA(1);
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:138:30: (op= TIMES_ |op= DIV_ )
+            	    int alt10=2;
+            	    int LA10_0 = input.LA(1);
 
-            	    if ( (LA9_0==TIMES_) ) {
-            	        alt9=1;
+            	    if ( (LA10_0==TIMES_) ) {
+            	        alt10=1;
             	    }
-            	    else if ( (LA9_0==DIV_) ) {
-            	        alt9=2;
+            	    else if ( (LA10_0==DIV_) ) {
+            	        alt10=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 9, 0, input);
+            	            new NoViableAltException("", 10, 0, input);
 
             	        throw nvae;
 
             	    }
-            	    switch (alt9) {
+            	    switch (alt10) {
             	        case 1 :
-            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:129:31: op= TIMES_
+            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:138:31: op= TIMES_
             	            {
-            	            op=(Token)match(input,TIMES_,FOLLOW_TIMES__in_multExp441); 
+            	            op=(Token)match(input,TIMES_,FOLLOW_TIMES__in_multExp502); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:129:41: op= DIV_
+            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:138:41: op= DIV_
             	            {
-            	            op=(Token)match(input,DIV_,FOLLOW_DIV__in_multExp445); 
+            	            op=(Token)match(input,DIV_,FOLLOW_DIV__in_multExp506); 
 
             	            }
             	            break;
@@ -1011,7 +1125,7 @@ public class VerilogExpressParser extends Parser {
             	    }
 
 
-            	    pushFollow(FOLLOW_notExp_in_multExp450);
+            	    pushFollow(FOLLOW_notExp_in_multExp511);
             	    arg2=notExp();
 
             	    state._fsp--;
@@ -1023,7 +1137,7 @@ public class VerilogExpressParser extends Parser {
             	    break;
 
             	default :
-            	    break loop10;
+            	    break loop11;
                 }
             } while (true);
 
@@ -1046,7 +1160,7 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "addExp"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:132:1: addExp returns [ DataSource d ] : arg1= multExp ( (op= '+' |op= '-' ) arg2= multExp )* ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:141:1: addExp returns [ DataSource d ] : arg1= multExp ( (op= '+' |op= '-' ) arg2= multExp )* ;
     public final DataSource addExp() throws RecognitionException {
         DataSource d = null;
 
@@ -1058,10 +1172,10 @@ public class VerilogExpressParser extends Parser {
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:133:2: (arg1= multExp ( (op= '+' |op= '-' ) arg2= multExp )* )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:133:4: arg1= multExp ( (op= '+' |op= '-' ) arg2= multExp )*
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:142:2: (arg1= multExp ( (op= '+' |op= '-' ) arg2= multExp )* )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:142:4: arg1= multExp ( (op= '+' |op= '-' ) arg2= multExp )*
             {
-            pushFollow(FOLLOW_multExp_in_addExp473);
+            pushFollow(FOLLOW_multExp_in_addExp534);
             arg1=multExp();
 
             state._fsp--;
@@ -1069,50 +1183,50 @@ public class VerilogExpressParser extends Parser {
 
             d = arg1;
 
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:133:30: ( (op= '+' |op= '-' ) arg2= multExp )*
-            loop12:
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:142:30: ( (op= '+' |op= '-' ) arg2= multExp )*
+            loop13:
             do {
-                int alt12=2;
-                int LA12_0 = input.LA(1);
+                int alt13=2;
+                int LA13_0 = input.LA(1);
 
-                if ( ((LA12_0 >= 15 && LA12_0 <= 16)) ) {
-                    alt12=1;
+                if ( ((LA13_0 >= 15 && LA13_0 <= 16)) ) {
+                    alt13=1;
                 }
 
 
-                switch (alt12) {
+                switch (alt13) {
             	case 1 :
-            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:133:32: (op= '+' |op= '-' ) arg2= multExp
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:142:32: (op= '+' |op= '-' ) arg2= multExp
             	    {
-            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:133:32: (op= '+' |op= '-' )
-            	    int alt11=2;
-            	    int LA11_0 = input.LA(1);
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:142:32: (op= '+' |op= '-' )
+            	    int alt12=2;
+            	    int LA12_0 = input.LA(1);
 
-            	    if ( (LA11_0==15) ) {
-            	        alt11=1;
+            	    if ( (LA12_0==15) ) {
+            	        alt12=1;
             	    }
-            	    else if ( (LA11_0==16) ) {
-            	        alt11=2;
+            	    else if ( (LA12_0==16) ) {
+            	        alt12=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 11, 0, input);
+            	            new NoViableAltException("", 12, 0, input);
 
             	        throw nvae;
 
             	    }
-            	    switch (alt11) {
+            	    switch (alt12) {
             	        case 1 :
-            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:133:33: op= '+'
+            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:142:33: op= '+'
             	            {
-            	            op=(Token)match(input,15,FOLLOW_15_in_addExp482); 
+            	            op=(Token)match(input,15,FOLLOW_15_in_addExp543); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:133:40: op= '-'
+            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:142:40: op= '-'
             	            {
-            	            op=(Token)match(input,16,FOLLOW_16_in_addExp486); 
+            	            op=(Token)match(input,16,FOLLOW_16_in_addExp547); 
 
             	            }
             	            break;
@@ -1120,19 +1234,19 @@ public class VerilogExpressParser extends Parser {
             	    }
 
 
-            	    pushFollow(FOLLOW_multExp_in_addExp491);
+            	    pushFollow(FOLLOW_multExp_in_addExp552);
             	    arg2=multExp();
 
             	    state._fsp--;
 
 
-            	    d = new CalcBinaryOpperation( op.getText(), d, arg2, currentBlock );
+            	    d = new CalcBinaryOpperation( op.getText(), d, arg2, currentBlock ); 
 
             	    }
             	    break;
 
             	default :
-            	    break loop12;
+            	    break loop13;
                 }
             } while (true);
 
@@ -1155,7 +1269,7 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "shiftExp"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:136:1: shiftExp returns [ DataSource d ] : arg1= addExp ( (op= '<<' |op= '>>' ) arg2= addExp )? ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:145:1: shiftExp returns [ DataSource d ] : arg1= addExp ( (op= '<<' |op= '>>' ) arg2= addExp )? ;
     public final DataSource shiftExp() throws RecognitionException {
         DataSource d = null;
 
@@ -1167,10 +1281,10 @@ public class VerilogExpressParser extends Parser {
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:137:2: (arg1= addExp ( (op= '<<' |op= '>>' ) arg2= addExp )? )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:137:4: arg1= addExp ( (op= '<<' |op= '>>' ) arg2= addExp )?
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:146:2: (arg1= addExp ( (op= '<<' |op= '>>' ) arg2= addExp )? )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:146:4: arg1= addExp ( (op= '<<' |op= '>>' ) arg2= addExp )?
             {
-            pushFollow(FOLLOW_addExp_in_shiftExp514);
+            pushFollow(FOLLOW_addExp_in_shiftExp575);
             arg1=addExp();
 
             state._fsp--;
@@ -1178,46 +1292,46 @@ public class VerilogExpressParser extends Parser {
 
             d = arg1;
 
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:137:28: ( (op= '<<' |op= '>>' ) arg2= addExp )?
-            int alt14=2;
-            int LA14_0 = input.LA(1);
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:146:28: ( (op= '<<' |op= '>>' ) arg2= addExp )?
+            int alt15=2;
+            int LA15_0 = input.LA(1);
 
-            if ( (LA14_0==19||LA14_0==23) ) {
-                alt14=1;
+            if ( (LA15_0==19||LA15_0==23) ) {
+                alt15=1;
             }
-            switch (alt14) {
+            switch (alt15) {
                 case 1 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:137:29: (op= '<<' |op= '>>' ) arg2= addExp
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:146:29: (op= '<<' |op= '>>' ) arg2= addExp
                     {
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:137:29: (op= '<<' |op= '>>' )
-                    int alt13=2;
-                    int LA13_0 = input.LA(1);
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:146:29: (op= '<<' |op= '>>' )
+                    int alt14=2;
+                    int LA14_0 = input.LA(1);
 
-                    if ( (LA13_0==19) ) {
-                        alt13=1;
+                    if ( (LA14_0==19) ) {
+                        alt14=1;
                     }
-                    else if ( (LA13_0==23) ) {
-                        alt13=2;
+                    else if ( (LA14_0==23) ) {
+                        alt14=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 13, 0, input);
+                            new NoViableAltException("", 14, 0, input);
 
                         throw nvae;
 
                     }
-                    switch (alt13) {
+                    switch (alt14) {
                         case 1 :
-                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:137:31: op= '<<'
+                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:146:31: op= '<<'
                             {
-                            op=(Token)match(input,19,FOLLOW_19_in_shiftExp522); 
+                            op=(Token)match(input,19,FOLLOW_19_in_shiftExp583); 
 
                             }
                             break;
                         case 2 :
-                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:137:41: op= '>>'
+                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:146:41: op= '>>'
                             {
-                            op=(Token)match(input,23,FOLLOW_23_in_shiftExp528); 
+                            op=(Token)match(input,23,FOLLOW_23_in_shiftExp589); 
 
                             }
                             break;
@@ -1225,7 +1339,7 @@ public class VerilogExpressParser extends Parser {
                     }
 
 
-                    pushFollow(FOLLOW_addExp_in_shiftExp534);
+                    pushFollow(FOLLOW_addExp_in_shiftExp595);
                     arg2=addExp();
 
                     state._fsp--;
@@ -1257,7 +1371,7 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "cmpExp"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:140:1: cmpExp returns [ DataSource d ] : arg1= shiftExp ( (op= '<' |op= '>' ) arg2= shiftExp )? ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:1: cmpExp returns [ DataSource d ] : arg1= shiftExp ( (op= '<' |op= '>' ) arg2= shiftExp )? ;
     public final DataSource cmpExp() throws RecognitionException {
         DataSource d = null;
 
@@ -1269,10 +1383,10 @@ public class VerilogExpressParser extends Parser {
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:141:2: (arg1= shiftExp ( (op= '<' |op= '>' ) arg2= shiftExp )? )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:141:4: arg1= shiftExp ( (op= '<' |op= '>' ) arg2= shiftExp )?
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:2: (arg1= shiftExp ( (op= '<' |op= '>' ) arg2= shiftExp )? )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:4: arg1= shiftExp ( (op= '<' |op= '>' ) arg2= shiftExp )?
             {
-            pushFollow(FOLLOW_shiftExp_in_cmpExp554);
+            pushFollow(FOLLOW_shiftExp_in_cmpExp615);
             arg1=shiftExp();
 
             state._fsp--;
@@ -1280,46 +1394,46 @@ public class VerilogExpressParser extends Parser {
 
             d = arg1;
 
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:141:31: ( (op= '<' |op= '>' ) arg2= shiftExp )?
-            int alt16=2;
-            int LA16_0 = input.LA(1);
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:31: ( (op= '<' |op= '>' ) arg2= shiftExp )?
+            int alt17=2;
+            int LA17_0 = input.LA(1);
 
-            if ( (LA16_0==18||LA16_0==22) ) {
-                alt16=1;
+            if ( (LA17_0==18||LA17_0==22) ) {
+                alt17=1;
             }
-            switch (alt16) {
+            switch (alt17) {
                 case 1 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:141:33: (op= '<' |op= '>' ) arg2= shiftExp
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:33: (op= '<' |op= '>' ) arg2= shiftExp
                     {
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:141:33: (op= '<' |op= '>' )
-                    int alt15=2;
-                    int LA15_0 = input.LA(1);
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:33: (op= '<' |op= '>' )
+                    int alt16=2;
+                    int LA16_0 = input.LA(1);
 
-                    if ( (LA15_0==18) ) {
-                        alt15=1;
+                    if ( (LA16_0==18) ) {
+                        alt16=1;
                     }
-                    else if ( (LA15_0==22) ) {
-                        alt15=2;
+                    else if ( (LA16_0==22) ) {
+                        alt16=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 15, 0, input);
+                            new NoViableAltException("", 16, 0, input);
 
                         throw nvae;
 
                     }
-                    switch (alt15) {
+                    switch (alt16) {
                         case 1 :
-                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:141:35: op= '<'
+                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:35: op= '<'
                             {
-                            op=(Token)match(input,18,FOLLOW_18_in_cmpExp564); 
+                            op=(Token)match(input,18,FOLLOW_18_in_cmpExp625); 
 
                             }
                             break;
                         case 2 :
-                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:141:44: op= '>'
+                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:44: op= '>'
                             {
-                            op=(Token)match(input,22,FOLLOW_22_in_cmpExp570); 
+                            op=(Token)match(input,22,FOLLOW_22_in_cmpExp631); 
 
                             }
                             break;
@@ -1327,7 +1441,7 @@ public class VerilogExpressParser extends Parser {
                     }
 
 
-                    pushFollow(FOLLOW_shiftExp_in_cmpExp576);
+                    pushFollow(FOLLOW_shiftExp_in_cmpExp637);
                     arg2=shiftExp();
 
                     state._fsp--;
@@ -1359,7 +1473,7 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "eqlExp"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:144:1: eqlExp returns [ DataSource d ] : arg1= cmpExp ( (op= '==' |op= '!=' ) arg2= cmpExp )? ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:1: eqlExp returns [ DataSource d ] : arg1= cmpExp ( (op= '==' |op= '!=' ) arg2= cmpExp )? ;
     public final DataSource eqlExp() throws RecognitionException {
         DataSource d = null;
 
@@ -1371,10 +1485,10 @@ public class VerilogExpressParser extends Parser {
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:145:2: (arg1= cmpExp ( (op= '==' |op= '!=' ) arg2= cmpExp )? )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:145:4: arg1= cmpExp ( (op= '==' |op= '!=' ) arg2= cmpExp )?
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:154:2: (arg1= cmpExp ( (op= '==' |op= '!=' ) arg2= cmpExp )? )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:154:4: arg1= cmpExp ( (op= '==' |op= '!=' ) arg2= cmpExp )?
             {
-            pushFollow(FOLLOW_cmpExp_in_eqlExp598);
+            pushFollow(FOLLOW_cmpExp_in_eqlExp659);
             arg1=cmpExp();
 
             state._fsp--;
@@ -1382,46 +1496,46 @@ public class VerilogExpressParser extends Parser {
 
             d = arg1;
 
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:145:28: ( (op= '==' |op= '!=' ) arg2= cmpExp )?
-            int alt18=2;
-            int LA18_0 = input.LA(1);
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:154:28: ( (op= '==' |op= '!=' ) arg2= cmpExp )?
+            int alt19=2;
+            int LA19_0 = input.LA(1);
 
-            if ( (LA18_0==10||LA18_0==21) ) {
-                alt18=1;
+            if ( (LA19_0==10||LA19_0==21) ) {
+                alt19=1;
             }
-            switch (alt18) {
+            switch (alt19) {
                 case 1 :
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:145:30: (op= '==' |op= '!=' ) arg2= cmpExp
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:154:30: (op= '==' |op= '!=' ) arg2= cmpExp
                     {
-                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:145:30: (op= '==' |op= '!=' )
-                    int alt17=2;
-                    int LA17_0 = input.LA(1);
+                    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:154:30: (op= '==' |op= '!=' )
+                    int alt18=2;
+                    int LA18_0 = input.LA(1);
 
-                    if ( (LA17_0==21) ) {
-                        alt17=1;
+                    if ( (LA18_0==21) ) {
+                        alt18=1;
                     }
-                    else if ( (LA17_0==10) ) {
-                        alt17=2;
+                    else if ( (LA18_0==10) ) {
+                        alt18=2;
                     }
                     else {
                         NoViableAltException nvae =
-                            new NoViableAltException("", 17, 0, input);
+                            new NoViableAltException("", 18, 0, input);
 
                         throw nvae;
 
                     }
-                    switch (alt17) {
+                    switch (alt18) {
                         case 1 :
-                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:145:32: op= '=='
+                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:154:32: op= '=='
                             {
-                            op=(Token)match(input,21,FOLLOW_21_in_eqlExp607); 
+                            op=(Token)match(input,21,FOLLOW_21_in_eqlExp668); 
 
                             }
                             break;
                         case 2 :
-                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:145:42: op= '!='
+                            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:154:42: op= '!='
                             {
-                            op=(Token)match(input,10,FOLLOW_10_in_eqlExp613); 
+                            op=(Token)match(input,10,FOLLOW_10_in_eqlExp674); 
 
                             }
                             break;
@@ -1429,13 +1543,13 @@ public class VerilogExpressParser extends Parser {
                     }
 
 
-                    pushFollow(FOLLOW_cmpExp_in_eqlExp619);
+                    pushFollow(FOLLOW_cmpExp_in_eqlExp680);
                     arg2=cmpExp();
 
                     state._fsp--;
 
 
-                    d =new CalcBinaryOpperation( op.getText(), d, arg2, currentBlock );
+                    d =new CalcBinaryOpperation( op.getText(), d, arg2, currentBlock ); 
 
                     }
                     break;
@@ -1461,7 +1575,7 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "bitAndExp"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:148:1: bitAndExp returns [ DataSource d ] : arg1= eqlExp ( (op= '&' |op= '|' ) arg2= eqlExp )* ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:157:1: bitAndExp returns [ DataSource d ] : arg1= eqlExp ( (op= '&' |op= '|' ) arg2= eqlExp )* ;
     public final DataSource bitAndExp() throws RecognitionException {
         DataSource d = null;
 
@@ -1473,10 +1587,10 @@ public class VerilogExpressParser extends Parser {
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:2: (arg1= eqlExp ( (op= '&' |op= '|' ) arg2= eqlExp )* )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:4: arg1= eqlExp ( (op= '&' |op= '|' ) arg2= eqlExp )*
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:158:2: (arg1= eqlExp ( (op= '&' |op= '|' ) arg2= eqlExp )* )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:158:4: arg1= eqlExp ( (op= '&' |op= '|' ) arg2= eqlExp )*
             {
-            pushFollow(FOLLOW_eqlExp_in_bitAndExp641);
+            pushFollow(FOLLOW_eqlExp_in_bitAndExp702);
             arg1=eqlExp();
 
             state._fsp--;
@@ -1484,50 +1598,50 @@ public class VerilogExpressParser extends Parser {
 
             d = arg1;
 
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:28: ( (op= '&' |op= '|' ) arg2= eqlExp )*
-            loop20:
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:158:28: ( (op= '&' |op= '|' ) arg2= eqlExp )*
+            loop21:
             do {
-                int alt20=2;
-                int LA20_0 = input.LA(1);
+                int alt21=2;
+                int LA21_0 = input.LA(1);
 
-                if ( (LA20_0==12||LA20_0==35) ) {
-                    alt20=1;
+                if ( (LA21_0==12||LA21_0==37) ) {
+                    alt21=1;
                 }
 
 
-                switch (alt20) {
+                switch (alt21) {
             	case 1 :
-            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:30: (op= '&' |op= '|' ) arg2= eqlExp
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:158:30: (op= '&' |op= '|' ) arg2= eqlExp
             	    {
-            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:30: (op= '&' |op= '|' )
-            	    int alt19=2;
-            	    int LA19_0 = input.LA(1);
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:158:30: (op= '&' |op= '|' )
+            	    int alt20=2;
+            	    int LA20_0 = input.LA(1);
 
-            	    if ( (LA19_0==12) ) {
-            	        alt19=1;
+            	    if ( (LA20_0==12) ) {
+            	        alt20=1;
             	    }
-            	    else if ( (LA19_0==35) ) {
-            	        alt19=2;
+            	    else if ( (LA20_0==37) ) {
+            	        alt20=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 19, 0, input);
+            	            new NoViableAltException("", 20, 0, input);
 
             	        throw nvae;
 
             	    }
-            	    switch (alt19) {
+            	    switch (alt20) {
             	        case 1 :
-            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:32: op= '&'
+            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:158:32: op= '&'
             	            {
-            	            op=(Token)match(input,12,FOLLOW_12_in_bitAndExp650); 
+            	            op=(Token)match(input,12,FOLLOW_12_in_bitAndExp711); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:41: op= '|'
+            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:158:41: op= '|'
             	            {
-            	            op=(Token)match(input,35,FOLLOW_35_in_bitAndExp656); 
+            	            op=(Token)match(input,37,FOLLOW_37_in_bitAndExp717); 
 
             	            }
             	            break;
@@ -1535,7 +1649,7 @@ public class VerilogExpressParser extends Parser {
             	    }
 
 
-            	    pushFollow(FOLLOW_eqlExp_in_bitAndExp662);
+            	    pushFollow(FOLLOW_eqlExp_in_bitAndExp723);
             	    arg2=eqlExp();
 
             	    state._fsp--;
@@ -1547,7 +1661,7 @@ public class VerilogExpressParser extends Parser {
             	    break;
 
             	default :
-            	    break loop20;
+            	    break loop21;
                 }
             } while (true);
 
@@ -1570,7 +1684,7 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "logicExp"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:152:1: logicExp returns [ DataSource d ] : arg1= bitAndExp ( (op= '&&' |op= '||' ) arg2= bitAndExp )* ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:161:1: logicExp returns [ DataSource d ] : arg1= bitAndExp ( (op= '&&' |op= '||' ) arg2= bitAndExp )* ;
     public final DataSource logicExp() throws RecognitionException {
         DataSource d = null;
 
@@ -1582,10 +1696,10 @@ public class VerilogExpressParser extends Parser {
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:2: (arg1= bitAndExp ( (op= '&&' |op= '||' ) arg2= bitAndExp )* )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:4: arg1= bitAndExp ( (op= '&&' |op= '||' ) arg2= bitAndExp )*
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:2: (arg1= bitAndExp ( (op= '&&' |op= '||' ) arg2= bitAndExp )* )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:4: arg1= bitAndExp ( (op= '&&' |op= '||' ) arg2= bitAndExp )*
             {
-            pushFollow(FOLLOW_bitAndExp_in_logicExp683);
+            pushFollow(FOLLOW_bitAndExp_in_logicExp744);
             arg1=bitAndExp();
 
             state._fsp--;
@@ -1593,50 +1707,50 @@ public class VerilogExpressParser extends Parser {
 
             d = arg1;
 
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:31: ( (op= '&&' |op= '||' ) arg2= bitAndExp )*
-            loop22:
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:31: ( (op= '&&' |op= '||' ) arg2= bitAndExp )*
+            loop23:
             do {
-                int alt22=2;
-                int LA22_0 = input.LA(1);
+                int alt23=2;
+                int LA23_0 = input.LA(1);
 
-                if ( (LA22_0==11||LA22_0==36) ) {
-                    alt22=1;
+                if ( (LA23_0==11||LA23_0==38) ) {
+                    alt23=1;
                 }
 
 
-                switch (alt22) {
+                switch (alt23) {
             	case 1 :
-            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:33: (op= '&&' |op= '||' ) arg2= bitAndExp
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:33: (op= '&&' |op= '||' ) arg2= bitAndExp
             	    {
-            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:33: (op= '&&' |op= '||' )
-            	    int alt21=2;
-            	    int LA21_0 = input.LA(1);
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:33: (op= '&&' |op= '||' )
+            	    int alt22=2;
+            	    int LA22_0 = input.LA(1);
 
-            	    if ( (LA21_0==11) ) {
-            	        alt21=1;
+            	    if ( (LA22_0==11) ) {
+            	        alt22=1;
             	    }
-            	    else if ( (LA21_0==36) ) {
-            	        alt21=2;
+            	    else if ( (LA22_0==38) ) {
+            	        alt22=2;
             	    }
             	    else {
             	        NoViableAltException nvae =
-            	            new NoViableAltException("", 21, 0, input);
+            	            new NoViableAltException("", 22, 0, input);
 
             	        throw nvae;
 
             	    }
-            	    switch (alt21) {
+            	    switch (alt22) {
             	        case 1 :
-            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:34: op= '&&'
+            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:34: op= '&&'
             	            {
-            	            op=(Token)match(input,11,FOLLOW_11_in_logicExp691); 
+            	            op=(Token)match(input,11,FOLLOW_11_in_logicExp752); 
 
             	            }
             	            break;
             	        case 2 :
-            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:44: op= '||'
+            	            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:44: op= '||'
             	            {
-            	            op=(Token)match(input,36,FOLLOW_36_in_logicExp697); 
+            	            op=(Token)match(input,38,FOLLOW_38_in_logicExp758); 
 
             	            }
             	            break;
@@ -1644,7 +1758,7 @@ public class VerilogExpressParser extends Parser {
             	    }
 
 
-            	    pushFollow(FOLLOW_bitAndExp_in_logicExp703);
+            	    pushFollow(FOLLOW_bitAndExp_in_logicExp764);
             	    arg2=bitAndExp();
 
             	    state._fsp--;
@@ -1656,7 +1770,7 @@ public class VerilogExpressParser extends Parser {
             	    break;
 
             	default :
-            	    break loop22;
+            	    break loop23;
                 }
             } while (true);
 
@@ -1679,25 +1793,25 @@ public class VerilogExpressParser extends Parser {
 
 
     // $ANTLR start "expression"
-    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:156:1: expression returns [ DataSource d ] : logicExp ;
+    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:165:1: expression returns [ DataSource d ] : logicExp ;
     public final DataSource expression() throws RecognitionException {
         DataSource d = null;
 
 
-        DataSource logicExp24 =null;
+        DataSource logicExp26 =null;
 
 
         try {
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:157:2: ( logicExp )
-            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:157:4: logicExp
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:166:2: ( logicExp )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:166:4: logicExp
             {
-            pushFollow(FOLLOW_logicExp_in_expression723);
-            logicExp24=logicExp();
+            pushFollow(FOLLOW_logicExp_in_expression784);
+            logicExp26=logicExp();
 
             state._fsp--;
 
 
-             d = logicExp24; 
+             d = logicExp26; 
 
             }
 
@@ -1721,25 +1835,25 @@ public class VerilogExpressParser extends Parser {
 
     public static final BitSet FOLLOW_moduleDec_in_system39 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_system41 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_moduleDec58 = new BitSet(new long[]{0x0000000000000100L});
-    public static final BitSet FOLLOW_VAR_in_moduleDec60 = new BitSet(new long[]{0x0000000401000000L});
+    public static final BitSet FOLLOW_30_in_moduleDec58 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_VAR_in_moduleDec60 = new BitSet(new long[]{0x0000001001000000L});
     public static final BitSet FOLLOW_doBlock_in_moduleDec62 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_parallelDoer_in_doBlock82 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_sequentualDoer_in_doBlock89 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_parallelDoer111 = new BitSet(new long[]{0x00000006ED000100L});
-    public static final BitSet FOLLOW_doAble_in_parallelDoer115 = new BitSet(new long[]{0x00000006EF000100L});
-    public static final BitSet FOLLOW_varDec_in_parallelDoer124 = new BitSet(new long[]{0x00000006EF000100L});
+    public static final BitSet FOLLOW_24_in_parallelDoer111 = new BitSet(new long[]{0x0000001BB5000100L});
+    public static final BitSet FOLLOW_doAble_in_parallelDoer115 = new BitSet(new long[]{0x0000001BB7000100L});
+    public static final BitSet FOLLOW_varDec_in_parallelDoer124 = new BitSet(new long[]{0x0000001BB7000100L});
     public static final BitSet FOLLOW_25_in_parallelDoer129 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_sequentualDoer153 = new BitSet(new long[]{0x00000006ED000100L});
-    public static final BitSet FOLLOW_doAble_in_sequentualDoer157 = new BitSet(new long[]{0x00000026ED000100L});
-    public static final BitSet FOLLOW_varDec_in_sequentualDoer166 = new BitSet(new long[]{0x00000026ED000100L});
-    public static final BitSet FOLLOW_37_in_sequentualDoer170 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_varDec182 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_36_in_sequentualDoer153 = new BitSet(new long[]{0x0000001BB5000100L});
+    public static final BitSet FOLLOW_doAble_in_sequentualDoer157 = new BitSet(new long[]{0x0000009BB5000100L});
+    public static final BitSet FOLLOW_varDec_in_sequentualDoer166 = new BitSet(new long[]{0x0000009BB5000100L});
+    public static final BitSet FOLLOW_39_in_sequentualDoer170 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_varDec182 = new BitSet(new long[]{0x0000000000000100L});
     public static final BitSet FOLLOW_VAR_in_varDec184 = new BitSet(new long[]{0x0000000000100000L});
     public static final BitSet FOLLOW_20_in_varDec186 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_INT_in_varDec188 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_17_in_varDec190 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_varDec197 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_32_in_varDec197 = new BitSet(new long[]{0x0000000000000100L});
     public static final BitSet FOLLOW_VAR_in_varDec199 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_17_in_varDec201 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_26_in_varDec215 = new BitSet(new long[]{0x0000000000000100L});
@@ -1747,56 +1861,64 @@ public class VerilogExpressParser extends Parser {
     public static final BitSet FOLLOW_20_in_varDec219 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_INT_in_varDec221 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_17_in_varDec223 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_varDec229 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_31_in_varDec229 = new BitSet(new long[]{0x0000000000000100L});
     public static final BitSet FOLLOW_VAR_in_varDec231 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_17_in_varDec233 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_varDec245 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_29_in_varDec245 = new BitSet(new long[]{0x0000000000000100L});
     public static final BitSet FOLLOW_VAR_in_varDec247 = new BitSet(new long[]{0x0000000000020000L});
     public static final BitSet FOLLOW_17_in_varDec249 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_doBlock_in_doAble273 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_doAssign_in_doAble280 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_dataTarget_in_doAssign302 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_doAssign304 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_expression_in_doAssign306 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_doAssign308 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_VAR_in_dataTarget326 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_dataTarget339 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_VAR_in_atom364 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_INT_in_atom371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_atom379 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_atom387 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_expression_in_atom389 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_atom391 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_NOT__in_notExp410 = new BitSet(new long[]{0x0000000100002120L});
-    public static final BitSet FOLLOW_atom_in_notExp413 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_notExp_in_multExp432 = new BitSet(new long[]{0x0000000000000092L});
-    public static final BitSet FOLLOW_TIMES__in_multExp441 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_DIV__in_multExp445 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_notExp_in_multExp450 = new BitSet(new long[]{0x0000000000000092L});
-    public static final BitSet FOLLOW_multExp_in_addExp473 = new BitSet(new long[]{0x0000000000018002L});
-    public static final BitSet FOLLOW_15_in_addExp482 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_16_in_addExp486 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_multExp_in_addExp491 = new BitSet(new long[]{0x0000000000018002L});
-    public static final BitSet FOLLOW_addExp_in_shiftExp514 = new BitSet(new long[]{0x0000000000880002L});
-    public static final BitSet FOLLOW_19_in_shiftExp522 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_23_in_shiftExp528 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_addExp_in_shiftExp534 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_shiftExp_in_cmpExp554 = new BitSet(new long[]{0x0000000000440002L});
-    public static final BitSet FOLLOW_18_in_cmpExp564 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_22_in_cmpExp570 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_shiftExp_in_cmpExp576 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_cmpExp_in_eqlExp598 = new BitSet(new long[]{0x0000000000200402L});
-    public static final BitSet FOLLOW_21_in_eqlExp607 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_10_in_eqlExp613 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_cmpExp_in_eqlExp619 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_eqlExp_in_bitAndExp641 = new BitSet(new long[]{0x0000000800001002L});
-    public static final BitSet FOLLOW_12_in_bitAndExp650 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_35_in_bitAndExp656 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_eqlExp_in_bitAndExp662 = new BitSet(new long[]{0x0000000800001002L});
-    public static final BitSet FOLLOW_bitAndExp_in_logicExp683 = new BitSet(new long[]{0x0000001000000802L});
-    public static final BitSet FOLLOW_11_in_logicExp691 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_36_in_logicExp697 = new BitSet(new long[]{0x0000000100002160L});
-    public static final BitSet FOLLOW_bitAndExp_in_logicExp703 = new BitSet(new long[]{0x0000001000000802L});
-    public static final BitSet FOLLOW_logicExp_in_expression723 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_doIf_in_doAble287 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_doIf313 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_13_in_doIf315 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_expression_in_doIf317 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_doIf319 = new BitSet(new long[]{0x0000001811000100L});
+    public static final BitSet FOLLOW_doAble_in_doIf323 = new BitSet(new long[]{0x0000000008000002L});
+    public static final BitSet FOLLOW_27_in_doIf338 = new BitSet(new long[]{0x0000001811000100L});
+    public static final BitSet FOLLOW_doAble_in_doIf342 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_dataTarget_in_doAssign363 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_doAssign365 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_expression_in_doAssign367 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_doAssign369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_VAR_in_dataTarget387 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_dataTarget400 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_VAR_in_atom425 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_INT_in_atom432 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_atom440 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_atom448 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_expression_in_atom450 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_atom452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_NOT__in_notExp471 = new BitSet(new long[]{0x0000000400002120L});
+    public static final BitSet FOLLOW_atom_in_notExp474 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_notExp_in_multExp493 = new BitSet(new long[]{0x0000000000000092L});
+    public static final BitSet FOLLOW_TIMES__in_multExp502 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_DIV__in_multExp506 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_notExp_in_multExp511 = new BitSet(new long[]{0x0000000000000092L});
+    public static final BitSet FOLLOW_multExp_in_addExp534 = new BitSet(new long[]{0x0000000000018002L});
+    public static final BitSet FOLLOW_15_in_addExp543 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_16_in_addExp547 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_multExp_in_addExp552 = new BitSet(new long[]{0x0000000000018002L});
+    public static final BitSet FOLLOW_addExp_in_shiftExp575 = new BitSet(new long[]{0x0000000000880002L});
+    public static final BitSet FOLLOW_19_in_shiftExp583 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_23_in_shiftExp589 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_addExp_in_shiftExp595 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_shiftExp_in_cmpExp615 = new BitSet(new long[]{0x0000000000440002L});
+    public static final BitSet FOLLOW_18_in_cmpExp625 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_22_in_cmpExp631 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_shiftExp_in_cmpExp637 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_cmpExp_in_eqlExp659 = new BitSet(new long[]{0x0000000000200402L});
+    public static final BitSet FOLLOW_21_in_eqlExp668 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_10_in_eqlExp674 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_cmpExp_in_eqlExp680 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_eqlExp_in_bitAndExp702 = new BitSet(new long[]{0x0000002000001002L});
+    public static final BitSet FOLLOW_12_in_bitAndExp711 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_37_in_bitAndExp717 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_eqlExp_in_bitAndExp723 = new BitSet(new long[]{0x0000002000001002L});
+    public static final BitSet FOLLOW_bitAndExp_in_logicExp744 = new BitSet(new long[]{0x0000004000000802L});
+    public static final BitSet FOLLOW_11_in_logicExp752 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_38_in_logicExp758 = new BitSet(new long[]{0x0000000400002160L});
+    public static final BitSet FOLLOW_bitAndExp_in_logicExp764 = new BitSet(new long[]{0x0000004000000802L});
+    public static final BitSet FOLLOW_logicExp_in_expression784 = new BitSet(new long[]{0x0000000000000002L});
 
 }

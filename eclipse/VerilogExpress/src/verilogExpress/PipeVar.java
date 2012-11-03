@@ -6,10 +6,15 @@ public class PipeVar extends Variable {
 	LinkedList< DataSource > sources = new LinkedList< DataSource >();
 	LinkedList< DataTarget > targets = new LinkedList< DataTarget >();
 
-	public PipeVar(String newName, DoBlock doBlock ) {
-		super(newName, doBlock );
+	public PipeVar(String newName ) {
+		super( newName );
 	}
 	
+	public PipeVar(String newName, DoBlock currentBlock) {
+		super( newName );
+		setBlock( currentBlock );
+	}
+
 	@Override
 	public void connectDataSource( DataSource dataSource) {
 		if( !sources.contains( dataSource ) ){

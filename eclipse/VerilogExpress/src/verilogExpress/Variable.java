@@ -8,10 +8,15 @@ public abstract class Variable  implements DataSource, DataTarget, VerilogCodeSo
 	
 	static HashMap< Variable, String > uniqueNames = new HashMap< Variable, String >();
 	
-	public Variable( String newName, DoBlock newBlock ){
+	public Variable( String newName ){
 		basename = newName;
-		block = newBlock;
-		block.addVarToBlock(this);
+	}
+	
+	public void setBlock( DoBlock newBlock ){
+		if( block == null ){
+			block = newBlock;
+			block.addVarToBlock( this );
+		}
 	}
 
 	public String getBasename() {

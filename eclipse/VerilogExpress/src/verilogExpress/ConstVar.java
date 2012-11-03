@@ -7,9 +7,14 @@ public class ConstVar  extends Variable {
 	
 	LinkedList< DataTarget > targets = new LinkedList< DataTarget >();
 	
-	public ConstVar( String name, String newValue, DoBlock doBlock ){
-		super( name, doBlock );
+	public ConstVar( String name, String newValue ){
+		super( name );
 		value = newValue;
+	}
+	public ConstVar(String name, String newValue, DoBlock currentBlock) {
+		super( name );
+		value = newValue;
+		setBlock( currentBlock );
 	}
 	@Override
 	public String getSourceIsReadySignal() {

@@ -26,9 +26,11 @@ public class VerilogSystem {
 		}
 		if( standardOut != null ){
 			topLevel.addOutputPort( standardOut );
+			standardOut.setBlock( topLevel );
 		}
 		if( standardIn != null ){
 			topLevel.addInputPort( standardIn );
+			standardIn.setBlock( topLevel );
 		}
 	}
 	
@@ -43,6 +45,7 @@ public class VerilogSystem {
 			standardOut = new OutputPort( "stdOut" );
 			if( topLevel != null ){
 				topLevel.addOutputPort( standardOut );
+				standardIn.setBlock( topLevel );
 			}
 		}
 		return standardOut;
@@ -52,6 +55,7 @@ public class VerilogSystem {
 			standardIn = new InputPort( "stdIn" );
 			if( topLevel != null ){
 				topLevel.addInputPort( standardIn );
+				standardIn.setBlock( topLevel );
 			}
 		}
 		return standardIn;

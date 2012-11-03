@@ -36,7 +36,6 @@ public class VerilogFileModule extends DoBlock{
 		for( OutputPort outputPort : outputPorts ){
 			result += outputPort.generateParamList();
 		}
-		
 		if( !outputPorts.isEmpty() ) result += ",\n";
 		
 		result += getClockSignal() + ",\n" 
@@ -59,58 +58,14 @@ public class VerilogFileModule extends DoBlock{
 	}
 
 	@Override
-	public String childActiveSignal(Doable doable) {
+	public String getChildActiveSignal(Doable doable) {
 		return "1'b1";
 	}
 
-	@Override
-	String getActiveSignal() {
-		return "1'b1";
-	}
 
 	@Override
 	String getDoneSignal() {
 		return "1'b0";
-	}
-
-	@Override
-	public String genTopCode(String indent) {
-		
-		String result = super.genTopCode( indent );
-		for( InputPort inputPort : inputPorts ){
-			result += inputPort.genTopCode( indent + "  " );
-		}
-		for( OutputPort outputPort : outputPorts ){
-			result += outputPort.genTopCode(indent + "  ");
-		}
-		//result += getMainBody().genTopCode( indent + "  " );
-		return result;
-	}
-
-	@Override
-	public String genMiddleCode(String indent) throws Exception {
-		String result = super.genMiddleCode( indent );
-		//result += getMainBody().genMiddleCode( indent + "  " );
-		for( InputPort inputPort : inputPorts ){
-			result += inputPort.genMiddleCode( indent + "  " );
-		}
-		for( OutputPort outputPort : outputPorts ){
-			result += outputPort.genMiddleCode(indent + "  ");
-		}
-		return result;
-	}
-
-	@Override
-	public String genBottomCode(String indent) {
-		String result = super.genBottomCode( indent );
-		//result += getMainBody().genBottomCode( indent + "  " );
-		for( InputPort inputPort : inputPorts ){
-			result += inputPort.genBottomCode( indent + "  " );
-		}
-		for( OutputPort outputPort : outputPorts ){
-			result += outputPort.genBottomCode(indent + "  ");
-		}
-		return result;
 	}
 	
 	@Override

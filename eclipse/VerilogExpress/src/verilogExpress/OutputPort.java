@@ -2,18 +2,23 @@ package verilogExpress;
 
 import java.util.LinkedList;
 
-public class OutputPort implements DataTarget, VerilogCodeSource {
+public class OutputPort extends Variable implements DataTarget, VerilogCodeSource {
 
 	
 	LinkedList< DataSource > sources = new LinkedList< DataSource >();
 	
-	String portName = null;
 	
 	public OutputPort( String newPortName ){
-		portName = newPortName;
+		super( newPortName );
 	}
 	
 	
+	public OutputPort(String newPortName, DoBlock currentBlock) {
+		super( newPortName );
+		setBlock( currentBlock );
+	}
+
+
 	public String generateParamList(){
 		return getTargetAchnolageTerm() + ",\n"
 		    +  getReadyTerm() + ",\n"
@@ -30,9 +35,9 @@ public class OutputPort implements DataTarget, VerilogCodeSource {
 	}
 
 
-	private String getTargetAchnolageTerm(){ return portName + "AckInput"; }
-	private String getReadyTerm(){ return portName + "ReadyOutput"; }
-	private String getOutDataTerm(){ return portName + "DataOutput"; }
+	private String getTargetAchnolageTerm(){ return getUniqueBasename() + "AckInput"; }
+	private String getReadyTerm(){ return getUniqueBasename() + "ReadyOutput"; }
+	private String getOutDataTerm(){ return getUniqueBasename() + "DataOutput"; }
 	
 	private String getSourcesReadies(){
 		String result = "";
@@ -100,6 +105,30 @@ public class OutputPort implements DataTarget, VerilogCodeSource {
 		result += indent + "assign " + getReadyTerm() + " = " + getSourcesReadies() + ";\n";
 		result += indent + "assign " + getOutDataTerm() + " = " + getActivatedSources() + ";\n";
 		return result;
+	}
+
+
+	@Override
+	public String getSourceIsReadySignal() {
+		throw new NullPointerException( "Can not connect output as datasource" );
+	}
+
+
+	@Override
+	public void connectDataTarget(DataTarget dataTarget) {
+		throw new NullPointerException( "Can not connect output as datasource" );
+	}
+
+
+	@Override
+	public String getSourceDataSignal() {
+		throw new NullPointerException( "Can not connect output as datasource" );
+	}
+
+
+	@Override
+	public String getCodename() {
+		return basename;
 	}
 	
 

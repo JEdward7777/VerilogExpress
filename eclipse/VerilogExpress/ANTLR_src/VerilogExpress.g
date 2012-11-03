@@ -77,11 +77,11 @@ varDec
 	| 'pipe' VAR ';'        { new PipeVar($VAR.text, currentBlock ); }
 	| 'const' VAR '=' INT ';'{ new ConstVar( $VAR.text, $INT.text, currentBlock ); }
 	| 'output' VAR ';'      { 
-		OutputPort newOutput = new OutputPort( $VAR.text ); 
+		OutputPort newOutput = new OutputPort( $VAR.text, currentBlock ); 
 		outputPorts.add( newOutput );
 	}
 	| 'input' VAR ';'       {
-		InputPort newInput = new InputPort( $VAR.text );
+		InputPort newInput = new InputPort( $VAR.text, currentBlock );
 		inputPorts.add( newInput );
 	}
 	;
@@ -89,9 +89,18 @@ varDec
 doAble returns [ Doable doable ]
 	: doBlock { $doable = $doBlock.block; }
 	| doAssign { $doable = $doAssign.assignment; }
+	| doIf    { $doable = $doIf.doIf; }
 	;
 	
-	
+doIf returns [ DoIf doIf ]
+	: 
+	{ $doIf = new DoIf(); }
+	'if' '(' expression ')' ifDo=doAble{
+		$doIf.connectDataSource( $expression.d );
+		$doIf.connectIfDo( ifDo );
+	}
+	( options{ greedy=true; }:'else' elseDo=doAble { $doIf.connectElseDo( elseDo ); } )?
+	;
 	
 doAssign returns [ DoAssign assignment ]
 	: dataTarget '=' expression ';' { 
@@ -130,7 +139,7 @@ multExp returns [ DataSource d ]
 	;
 	
 addExp returns [ DataSource d ]
-	: arg1=multExp {$d = arg1;} ( (op='+'|op='-') arg2=multExp {$d = new CalcBinaryOpperation( op.getText(), $d, arg2, currentBlock );} )*
+	: arg1=multExp {$d = arg1;} ( (op='+'|op='-') arg2=multExp {$d = new CalcBinaryOpperation( op.getText(), $d, arg2, currentBlock ); } )*
 	;
 	
 shiftExp returns [ DataSource d ]
@@ -142,7 +151,7 @@ cmpExp returns [ DataSource d ]
 	;
 
 eqlExp returns [ DataSource d ]
-	: arg1=cmpExp {$d = arg1;}( ( op='==' | op='!=' ) arg2=cmpExp{$d =new CalcBinaryOpperation( op.getText(), $d, arg2, currentBlock );} )?
+	: arg1=cmpExp {$d = arg1;}( ( op='==' | op='!=' ) arg2=cmpExp{$d =new CalcBinaryOpperation( op.getText(), $d, arg2, currentBlock ); } )?
 	;
 	
 bitAndExp returns [ DataSource d ]

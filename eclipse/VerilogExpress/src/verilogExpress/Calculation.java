@@ -4,8 +4,8 @@ abstract public class Calculation extends PipeVar {
 	
 	static int nextCalcNumber = 0;
 	
-	public Calculation( DoBlock doBlock ) {
-		super( "calc" + (nextCalcNumber++), doBlock );
+	public Calculation( ) {
+		super( "calc" + (nextCalcNumber++) );
 	}
 
 	

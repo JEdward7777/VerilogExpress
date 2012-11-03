@@ -5,9 +5,15 @@ import java.util.LinkedList;
 public class RegVar extends Variable {
 	String resetValue = "0";
 	
-	public RegVar(String newName, String newResetValue, DoBlock doBlock ) {
-		super(newName, doBlock);
+	public RegVar(String newName, String newResetValue ) {
+		super(newName);
 		resetValue = newResetValue;
+	}
+
+	public RegVar(String newName, String newResetValue, DoBlock currentBlock) {
+		super( newName );
+		resetValue = newResetValue;
+		setBlock( currentBlock );
 	}
 
 	LinkedList< DataSource > sources = new LinkedList< DataSource >();
@@ -75,8 +81,8 @@ public class RegVar extends Variable {
 
 	@Override
 	public String getTargetAchnolageSignal(DataSource sourceToAchnolage) {
-		// always acknowledge
-		return "1'b1";
+		//always achnowledge when data is ready
+		return sourceToAchnolage.getSourceIsReadySignal();
 	}
 
 	@Override
