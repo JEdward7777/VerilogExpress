@@ -90,6 +90,7 @@ doAble returns [ Doable doable ]
 	: doBlock { $doable = $doBlock.block; }
 	| doAssign { $doable = $doAssign.assignment; }
 	| doIf    { $doable = $doIf.doIf; }
+	| doWhile { $doable = $doWhile.doWhile; }
 	;
 	
 doIf returns [ DoIf doIf ]
@@ -100,6 +101,14 @@ doIf returns [ DoIf doIf ]
 		$doIf.connectIfDo( ifDo );
 	}
 	( options{ greedy=true; }:'else' elseDo=doAble { $doIf.connectElseDo( elseDo ); } )?
+	;
+	
+doWhile returns [ DoWhile doWhile ]
+	: 'while' '(' expression ')' doAble { 
+		$doWhile = new DoWhile();
+		$doWhile.connectDataSource( $expression.d );
+		$doWhile.connectWhileDo( $doAble.doable );
+	}
 	;
 	
 doAssign returns [ DoAssign assignment ]

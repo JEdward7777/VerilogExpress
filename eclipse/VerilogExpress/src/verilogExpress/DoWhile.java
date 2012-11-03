@@ -1,10 +1,9 @@
 package verilogExpress;
 
-public class DoIf extends DoBlock implements DataTarget{
+public class DoWhile extends DoBlock implements DataTarget{
 	
 	DataSource test = null;
-	Doable ifDo = null;
-	Doable elseDo = null;
+	Doable whileDo = null;
 	@Override
 	public void connectDataSource(DataSource newSource) {
 		if( test == null ){
@@ -13,19 +12,13 @@ public class DoIf extends DoBlock implements DataTarget{
 		}
 	}
 	
-	public void connectIfDo( Doable newIfDo ){
-		if( ifDo == null ){
-			ifDo = newIfDo;
-			ifDo.setParrent(this);
+	public void connectWhileDo( Doable newWhileDo ){
+		if( whileDo == null ){
+			whileDo = newWhileDo;
+			whileDo.setParrent(this);
 		}
 	}
 	
-	public void connectElseDo( Doable newElseDo ){
-		if( elseDo == null ){
-			elseDo = newElseDo;
-			elseDo.setParrent(this);
-		}
-	}
 	String getDidTestRegName(){    return getUniqueName() + "_DidTestReg"; }
 	String getPassedTestRegName(){ return getUniqueName() + "_TestPassedReg"; }
 	
@@ -48,7 +41,7 @@ public class DoIf extends DoBlock implements DataTarget{
 		result += indent + "end else begin\n";
 		result += indent + "   if( " + getActiveSignal() + " && " + test.getSourceIsReadySignal() + " ) begin\n";
 		result += indent + "       " + getDidTestRegName() + " <= 1;\n";
-		result += indent + "   end else if( " + getDoneSignal() + " ) begin\n";
+		result += indent + "   end else if( " + whileDo.getDoneSignal() + " ) begin\n";
 		result += indent + "       " + getDidTestRegName() + " <= 0;\n";
 		result += indent + "   end\n";
 		result += indent + "end\n";
@@ -59,7 +52,7 @@ public class DoIf extends DoBlock implements DataTarget{
 		result += indent + "end else begin\n";
 		result += indent + "   if( " + getActiveSignal() + " && !" + getDidTestRegName() + " && " + test.getSourceIsReadySignal() + " ) begin\n";
 		result += indent + "       " + getPassedTestRegName() + " <= " + test.getSourceDataSignal() + "[0];\n";
-		result += indent + "   end else if( " + getDoneSignal() + " ) begin\n";
+		result += indent + "   end else if( " + whileDo.getDoneSignal() + " ) begin\n";
 		result += indent + "       " + getPassedTestRegName() + " <= 0;\n";
 		result += indent + "   end\n";
 		result += indent + "end\n";
@@ -79,28 +72,17 @@ public class DoIf extends DoBlock implements DataTarget{
 	}
 	@Override
 	public String getChildActiveSignal(Doable doable) {
-		String result = "";
-		if( doable == ifDo ){
-			result = "(" + getDidTestRegName() + " && " + getPassedTestRegName() + ")";
-		}else{
-			result = "(" + getDidTestRegName() + " && !" + getPassedTestRegName() + ")";
-		}
-		return result;
+		return "(" + getDidTestRegName() + " && " + getPassedTestRegName() + ")";
 	}
 
 	@Override
 	String getDoneSignal() {
-		String result = "";
-		if( elseDo == null ){
-			result = "(" + getDidTestRegName() + " && " + ifDo.getDoneSignal() + ")";
-		}else{
-			result = "(" + getDidTestRegName() + " && ( " + getPassedTestRegName() + "?" + ifDo.getDoneSignal() + ":" + elseDo.getDoneSignal() + " ) )";
-		}
-		return result;
+		return "(" + getDidTestRegName() + " && !" + getPassedTestRegName() + ")";
 	}
+	
 	@Override
 	String getDescribeName() {
-		return "if";
+		return "while";
 	}
 	
 
