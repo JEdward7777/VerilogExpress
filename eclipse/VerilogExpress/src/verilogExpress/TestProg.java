@@ -3,7 +3,8 @@ package verilogExpress;
 public class TestProg {
 	public static void main(String[] args) throws Exception {
 
-		VerilogSystem system = new VerilogSystem("testProg");
+		VerilogSystem system = new VerilogSystem();
+		system.setProgName( "testProg" );
 
 		VerilogFileModule module = system.getTopLevel();
 		SequentualDoer mainBody = new SequentualDoer();

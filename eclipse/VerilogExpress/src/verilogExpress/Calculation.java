@@ -1,7 +1,5 @@
 package verilogExpress;
 
-import java.util.LinkedList;
-
 abstract public class Calculation extends PipeVar {
 	
 	static int nextCalcNumber = 0;

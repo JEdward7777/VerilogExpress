@@ -103,6 +103,11 @@ public class PipeVar extends Variable {
 		return "";
 	}
 
+	@Override
+	public String getCodename() {
+		return getUniqueBasename() + "Pipe";
+	}
+
 
 
 

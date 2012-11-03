@@ -28,7 +28,7 @@ public class ConstVar  extends Variable {
 	}
 	@Override
 	public void connectDataSource(DataSource newSource) {
-		throw new NullPointerException( "Can't assign to const " + name );
+		throw new NullPointerException( "Can't assign to const " + basename );
 	}
 	@Override
 	public String getTargetAchnolageSignal(DataSource sourceToAchnolage) {
@@ -45,6 +45,10 @@ public class ConstVar  extends Variable {
 	@Override
 	public String genBottomCode(String indent) {
 		return "";
+	}
+	@Override
+	public String getCodename() {
+		return value;
 	}
 
 }

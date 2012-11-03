@@ -6,9 +6,10 @@ public class VerilogFileModule extends DoBlock{
 	
 	//LinkedList<Wire> wires = new LinkedList<Wire>();
 	String moduleName = "";
+	LinkedList< InputPort >  inputPorts  = new LinkedList< InputPort >();
 	LinkedList< OutputPort > outputPorts = new LinkedList< OutputPort >();
 	
-	public VerilogFileModule( String newModuleName ){
+	public void setModuleName( String newModuleName ){
 		moduleName = newModuleName;
 	}
 
@@ -16,15 +17,21 @@ public class VerilogFileModule extends DoBlock{
 		appendDo( mainBody );
 	}
 
+	/*
 	public Doable getMainBody() {
 		return listToDo.getFirst();
-	}
+	}*/
 	
 	//@Override
 	String generateSource( String indent ) throws Exception {
 		String result = "";
 		result += indent + "`timescale 1ns / 1ps\n";
 		result += indent + "module " + moduleName + "(\n" ;
+		
+		for( InputPort inputPort : inputPorts ){
+			result += inputPort.generateParamList();
+		}
+		if( !inputPorts.isEmpty() ) result += ",\n";
 		
 		for( OutputPort outputPort : outputPorts ){
 			result += outputPort.generateParamList();
@@ -68,18 +75,25 @@ public class VerilogFileModule extends DoBlock{
 
 	@Override
 	public String genTopCode(String indent) {
+		
 		String result = super.genTopCode( indent );
+		for( InputPort inputPort : inputPorts ){
+			result += inputPort.genTopCode( indent + "  " );
+		}
 		for( OutputPort outputPort : outputPorts ){
 			result += outputPort.genTopCode(indent + "  ");
 		}
-		result += getMainBody().genTopCode( indent + "  " );
+		//result += getMainBody().genTopCode( indent + "  " );
 		return result;
 	}
 
 	@Override
 	public String genMiddleCode(String indent) throws Exception {
 		String result = super.genMiddleCode( indent );
-		result += getMainBody().genMiddleCode( indent + "  " );
+		//result += getMainBody().genMiddleCode( indent + "  " );
+		for( InputPort inputPort : inputPorts ){
+			result += inputPort.genMiddleCode( indent + "  " );
+		}
 		for( OutputPort outputPort : outputPorts ){
 			result += outputPort.genMiddleCode(indent + "  ");
 		}
@@ -89,7 +103,10 @@ public class VerilogFileModule extends DoBlock{
 	@Override
 	public String genBottomCode(String indent) {
 		String result = super.genBottomCode( indent );
-		result += getMainBody().genBottomCode( indent + "  " );
+		//result += getMainBody().genBottomCode( indent + "  " );
+		for( InputPort inputPort : inputPorts ){
+			result += inputPort.genBottomCode( indent + "  " );
+		}
 		for( OutputPort outputPort : outputPorts ){
 			result += outputPort.genBottomCode(indent + "  ");
 		}
@@ -118,7 +135,10 @@ public class VerilogFileModule extends DoBlock{
 
 	public void addOutputPort(OutputPort outputPort) {
 		outputPorts.add( outputPort );
-		outputPort.setFileModule( this );
+	}
+	
+	public void addInputPort( InputPort inputPort ){
+		inputPorts.add( inputPort );
 	}
 
 }

@@ -17,21 +17,27 @@ grammar VerilogExpress;
 	DoBlock currentBlock = null;
 	int anonConstNum = 0;
 	LinkedList< OutputPort > outputPorts = new LinkedList< OutputPort >();
-	//LinkedList< InputPort >  inputPorts  = new LinkedList< InputPort  >();
+	LinkedList< InputPort >  inputPorts  = new LinkedList< InputPort  >();
+	VerilogSystem verilogSystem = new VerilogSystem();
 }
 
 
 system returns [VerilogSystem system]
 	: moduleDec EOF { 
-			$system = new VerilogSystem( $moduleDec.progName );
-			$system.setTopLevel( $moduleDec.module );
+			$system = verilogSystem;
+			$system.setProgName( $moduleDec.progName );
+			$system.setTopModule( $moduleDec.module );
 		 }
 	;
 
 moduleDec returns [ VerilogFileModule module, String progName ]
 	: 'module' VAR doBlock {
-		$module = new VerilogFileModule( $VAR.text + "_top" );
+		$module = new VerilogFileModule( );
+		$module.setModuleName( $VAR.text + "_top" );
 		$module.setMainBody( $doBlock.block );
+		for( InputPort inputPort : inputPorts ){
+			$module.addInputPort( inputPort );
+		}
 		for( OutputPort outputPort : outputPorts ){
 			$module.addOutputPort( outputPort );
 		}
@@ -74,6 +80,10 @@ varDec
 		OutputPort newOutput = new OutputPort( $VAR.text ); 
 		outputPorts.add( newOutput );
 	}
+	| 'input' VAR ';'       {
+		InputPort newInput = new InputPort( $VAR.text );
+		inputPorts.add( newInput );
+	}
 	;
 	
 doAble returns [ Doable doable ]
@@ -84,16 +94,17 @@ doAble returns [ Doable doable ]
 	
 	
 doAssign returns [ DoAssign assignment ]
-	: VAR '=' expression ';' { 
+	: dataTarget '=' expression ';' { 
 		$assignment = new DoAssign( $expression.d );
-		Variable v = currentBlock.getVar( $VAR.text );
-		v.connectDataSource( $assignment );
+		$dataTarget.target.connectDataSource( $assignment );
 		}
 	;
 	
-
-
-
+dataTarget returns [ DataTarget target ]
+	: VAR       { $target = currentBlock.getVar( $VAR.text ); }
+	| 'stdout'  { $target = verilogSystem.getStdOut(); }
+	;
+	
 
 //java operator precidence	
 //http://bmanolov.free.fr/javaoperators.php
@@ -104,6 +115,7 @@ atom returns [ DataSource d ]
 	: VAR { $d = currentBlock.getVar( $VAR.getText() ); }
 	| INT { $d = new ConstVar( "AnonInt" + (anonConstNum++), $INT.getText(), currentBlock ); }
 //	| FLOAT
+	| 'stdin'  { $d = verilogSystem.getStdIn(); }
 	| '(' expression ')' {$d = $expression.d; }
 	;
 /*

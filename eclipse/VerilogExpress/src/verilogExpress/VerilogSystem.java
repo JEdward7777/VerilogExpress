@@ -1,21 +1,39 @@
 package verilogExpress;
 
-import java.util.LinkedList;
-
 public class VerilogSystem {
 	
 	VerilogFileModule topLevel = null;
 	
 	OutputPort standardOut = null;
+	InputPort standardIn = null;
 	
-	String name = null;
+	String progName = null;
 	
-	public VerilogSystem( String newName ){
-		name = newName;
-		topLevel = new VerilogFileModule( newName + "_top" );
+	public VerilogSystem(){
+	}
+	
+	public void setProgName( String newProgName ){
+		progName = newProgName;
+		if( topLevel != null ){
+			topLevel.setModuleName( progName + "_top" );
+		}
+	}
+	
+	public void setTopModule( VerilogFileModule newTopModule ){
+		topLevel = newTopModule;
+		if( progName != null ){
+			topLevel.setModuleName( progName + "_top" );
+		}
+		if( standardOut != null ){
+			topLevel.addOutputPort( standardOut );
+		}
+		if( standardIn != null ){
+			topLevel.addInputPort( standardIn );
+		}
 	}
 	
 	public VerilogFileModule getTopLevel(){
+		if( topLevel == null ) throw new NullPointerException( "Top Level never set in VerilogSystem" );
 		return topLevel;
 	}
 
@@ -23,13 +41,19 @@ public class VerilogSystem {
 		
 		if( standardOut == null ){
 			standardOut = new OutputPort( "stdOut" );
-			topLevel.addOutputPort( standardOut );
+			if( topLevel != null ){
+				topLevel.addOutputPort( standardOut );
+			}
 		}
 		return standardOut;
 	}
-
-	public void setTopLevel(VerilogFileModule verilogFileModule) {
-		topLevel = verilogFileModule;
+	public DataSource getStdIn(){
+		if( standardIn == null ){
+			standardIn = new InputPort( "stdIn" );
+			if( topLevel != null ){
+				topLevel.addInputPort( standardIn );
+			}
+		}
+		return standardIn;
 	}
-
 }

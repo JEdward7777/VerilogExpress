@@ -15,17 +15,17 @@ public class RegVar extends Variable {
 	
 	@Override
 	public String genTopCode(String indent) {
-		return indent + "reg [31:0] " + name + ";\n";
+		return indent + "reg [31:0] " + getCodename() + ";\n";
 	}
 
 	@Override
 	public String genMiddleCode(String indent) throws Exception {
-		if( sources.size() == 0 ) throw new Exception( "No sources for reg " + name );
+		if( sources.size() == 0 ) throw new Exception( "No sources for reg " + basename );
 		
 		String result = "";
 		result += indent + "always @( posedge " + block.getClockSignal() + " )\n";
 		result += indent + "if( " + block.getResetSignal() + " ) begin\n";
-		result += indent + "   " + name + " <= " + resetValue + ";\n";
+		result += indent + "   " + getCodename() + " <= " + resetValue + ";\n";
 		result += indent + "end else begin\n";
 		boolean isFirstSource = true;
 		for( DataSource s : sources ){
@@ -37,7 +37,7 @@ public class RegVar extends Variable {
 			}
 			result += "if( " + s.getSourceIsReadySignal() + " )begin\n";
 			//System.err.println( s.getSourceIsReadySignal() );
-			result += indent + "      " + name + " <= " + s.getSourceDataSignal() + ";\n";
+			result += indent + "      " + getCodename() + " <= " + s.getSourceDataSignal() + ";\n";
 		}
 		result += indent + "   end\n";
 		result += indent + "end\n";
@@ -81,9 +81,13 @@ public class RegVar extends Variable {
 
 	@Override
 	public String getSourceDataSignal() {
-		return name;
+		return getCodename();
 	}
 
 
+	@Override
+	public String getCodename() {
+		return getUniqueBasename() + "Reg";
+	}
 
 }

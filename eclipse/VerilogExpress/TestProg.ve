@@ -1,5 +1,13 @@
 module testModule{
-	reg testReg = 0;
-	testReg = testReg + 1;
-	testReg = (testReg + 1) * 2;
+	reg sam = 3;
+	sam = stdin;
+	reg bob = 4;
+	bob = sam + 1;
+	reg sue = 6;
+	{
+		reg bob = 5;
+		bob = sam;
+		sue = bob;
+	}
+	stdout = bob;
 }

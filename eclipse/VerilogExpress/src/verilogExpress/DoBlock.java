@@ -15,7 +15,7 @@ abstract public class DoBlock extends Doable {
 	}
 	
 	public void addVarToBlock( Variable newVariable ){
-		variables.put( newVariable.getName(), newVariable );
+		variables.put( newVariable.getBasename(), newVariable );
 	}
 	
 	
@@ -45,6 +45,20 @@ abstract public class DoBlock extends Doable {
 		for( Variable v : variables.values() ){
 			result += v.genTopCode(indent);
 		}
+		
+		
+		for( Doable doable : listToDo ){
+			//if( doable.getUniqueName().equals( "ModuletestModule_top_SequentualDoer0" ) ){
+			//	throw new NullPointerException( "here" );
+			//}
+			String doableTopCode = doable.genTopCode(indent);
+			if( !doableTopCode.equals("") ){
+				result += "//Doable " + doable.getUniqueName() + " top code vv \n";
+				result += doableTopCode;
+				result += "//End of " + doable.getUniqueName() + " top code ^^ \n";
+			}
+		}
+		
 		return result;
 	}
 
@@ -54,6 +68,16 @@ abstract public class DoBlock extends Doable {
 		for( Variable v : variables.values() ){
 			result += v.genMiddleCode(indent);
 		}
+		
+		for( Doable doable : listToDo ){
+			String doableMiddleCode = doable.genMiddleCode(indent);
+			if( !doableMiddleCode.equals( "" ) ){
+				result += "//Doable " + doable.getUniqueName() + " middle code vv \n";
+				result += doableMiddleCode;
+				result += "//End of " + doable.getUniqueName() + " middle code ^^ \n";
+			}
+		}
+		
 		return result;
 	}
 
@@ -63,6 +87,16 @@ abstract public class DoBlock extends Doable {
 		for( Variable v : variables.values() ){
 			result += v.genBottomCode(indent);
 		}
+		
+		for( Doable doable : listToDo ){
+			String doableBottomCode = doable.genBottomCode(indent);
+			if( !doableBottomCode.equals("") ){
+				result += "//Doable " + doable.getUniqueName() + " bottom code vv \n";
+				result += doableBottomCode;
+				result += "//End of " + doable.getUniqueName() + " bottom code ^^ \n";
+			}
+		}
+		
 		return result;
 	}
 	

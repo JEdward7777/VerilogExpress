@@ -1,4 +1,4 @@
-// $ANTLR 3.4 C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g 2012-11-02 12:40:39
+// $ANTLR 3.4 C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g 2012-11-03 11:11:13
 
     package verilogExpress;
 
@@ -36,6 +36,9 @@ public class VerilogExpressLexer extends Lexer {
     public static final int T__32=32;
     public static final int T__33=33;
     public static final int T__34=34;
+    public static final int T__35=35;
+    public static final int T__36=36;
+    public static final int T__37=37;
     public static final int DIV_=4;
     public static final int INT=5;
     public static final int NOT_=6;
@@ -56,15 +59,15 @@ public class VerilogExpressLexer extends Lexer {
     public VerilogExpressLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g"; }
+    public String getGrammarFileName() { return "C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g"; }
 
     // $ANTLR start "T__10"
     public final void mT__10() throws RecognitionException {
         try {
             int _type = T__10;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:6:7: ( '!=' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:6:9: '!='
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:6:7: ( '!=' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:6:9: '!='
             {
             match("!="); 
 
@@ -86,8 +89,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:7:7: ( '&&' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:7:9: '&&'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:7:7: ( '&&' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:7:9: '&&'
             {
             match("&&"); 
 
@@ -109,8 +112,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:8:7: ( '&' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:8:9: '&'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:8:7: ( '&' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:8:9: '&'
             {
             match('&'); 
 
@@ -130,8 +133,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:9:7: ( '(' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:9:9: '('
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:9:7: ( '(' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:9:9: '('
             {
             match('('); 
 
@@ -151,8 +154,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:10:7: ( ')' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:10:9: ')'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:10:7: ( ')' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:10:9: ')'
             {
             match(')'); 
 
@@ -172,8 +175,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:11:7: ( '+' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:11:9: '+'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:11:7: ( '+' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:11:9: '+'
             {
             match('+'); 
 
@@ -193,8 +196,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:12:7: ( '-' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:12:9: '-'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:12:7: ( '-' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:12:9: '-'
             {
             match('-'); 
 
@@ -214,8 +217,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:13:7: ( ';' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:13:9: ';'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:13:7: ( ';' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:13:9: ';'
             {
             match(';'); 
 
@@ -235,8 +238,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:14:7: ( '<' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:14:9: '<'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:14:7: ( '<' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:14:9: '<'
             {
             match('<'); 
 
@@ -256,8 +259,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:15:7: ( '<<' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:15:9: '<<'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:15:7: ( '<<' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:15:9: '<<'
             {
             match("<<"); 
 
@@ -279,8 +282,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:16:7: ( '=' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:16:9: '='
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:16:7: ( '=' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:16:9: '='
             {
             match('='); 
 
@@ -300,8 +303,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:17:7: ( '==' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:17:9: '=='
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:17:7: ( '==' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:17:9: '=='
             {
             match("=="); 
 
@@ -323,8 +326,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:18:7: ( '>' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:18:9: '>'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:18:7: ( '>' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:18:9: '>'
             {
             match('>'); 
 
@@ -344,8 +347,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:19:7: ( '>>' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:19:9: '>>'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:19:7: ( '>>' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:19:9: '>>'
             {
             match(">>"); 
 
@@ -367,8 +370,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:20:7: ( '[' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:20:9: '['
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:20:7: ( '[' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:20:9: '['
             {
             match('['); 
 
@@ -388,8 +391,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:21:7: ( ']' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:21:9: ']'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:21:7: ( ']' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:21:9: ']'
             {
             match(']'); 
 
@@ -409,8 +412,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:22:7: ( 'const' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:22:9: 'const'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:22:7: ( 'const' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:22:9: 'const'
             {
             match("const"); 
 
@@ -432,10 +435,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:23:7: ( 'module' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:23:9: 'module'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:23:7: ( 'input' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:23:9: 'input'
             {
-            match("module"); 
+            match("input"); 
 
 
 
@@ -455,10 +458,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:24:7: ( 'output' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:24:9: 'output'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:24:7: ( 'module' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:24:9: 'module'
             {
-            match("output"); 
+            match("module"); 
 
 
 
@@ -478,10 +481,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:25:7: ( 'pipe' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:25:9: 'pipe'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:25:7: ( 'output' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:25:9: 'output'
             {
-            match("pipe"); 
+            match("output"); 
 
 
 
@@ -501,10 +504,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:26:7: ( 'reg' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:26:9: 'reg'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:26:7: ( 'pipe' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:26:9: 'pipe'
             {
-            match("reg"); 
+            match("pipe"); 
 
 
 
@@ -524,10 +527,12 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:27:7: ( '{' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:27:9: '{'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:27:7: ( 'reg' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:27:9: 'reg'
             {
-            match('{'); 
+            match("reg"); 
+
+
 
             }
 
@@ -545,10 +550,12 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:28:7: ( '|' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:28:9: '|'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:28:7: ( 'stdin' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:28:9: 'stdin'
             {
-            match('|'); 
+            match("stdin"); 
+
+
 
             }
 
@@ -566,10 +573,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:29:7: ( '||' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:29:9: '||'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:29:7: ( 'stdout' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:29:9: 'stdout'
             {
-            match("||"); 
+            match("stdout"); 
 
 
 
@@ -589,10 +596,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:30:7: ( '}' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:30:9: '}'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:30:7: ( '{' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:30:9: '{'
             {
-            match('}'); 
+            match('{'); 
 
             }
 
@@ -605,13 +612,78 @@ public class VerilogExpressLexer extends Lexer {
     }
     // $ANTLR end "T__34"
 
+    // $ANTLR start "T__35"
+    public final void mT__35() throws RecognitionException {
+        try {
+            int _type = T__35;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:31:7: ( '|' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:31:9: '|'
+            {
+            match('|'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__35"
+
+    // $ANTLR start "T__36"
+    public final void mT__36() throws RecognitionException {
+        try {
+            int _type = T__36;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:32:7: ( '||' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:32:9: '||'
+            {
+            match("||"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__36"
+
+    // $ANTLR start "T__37"
+    public final void mT__37() throws RecognitionException {
+        try {
+            int _type = T__37;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:33:7: ( '}' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:33:9: '}'
+            {
+            match('}'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__37"
+
     // $ANTLR start "NOT_"
     public final void mNOT_() throws RecognitionException {
         try {
             int _type = NOT_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:7: ( '!' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:149:9: '!'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:161:7: ( '!' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:161:9: '!'
             {
             match('!'); 
 
@@ -631,8 +703,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = TIMES_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:8: ( '*' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:150:10: '*'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:8: ( '*' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:162:10: '*'
             {
             match('*'); 
 
@@ -652,8 +724,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = DIV_;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:151:6: ( '/' )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:151:8: '/'
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:163:6: ( '/' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:163:8: '/'
             {
             match('/'); 
 
@@ -673,8 +745,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = VAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:165:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:165:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -686,7 +758,7 @@ public class VerilogExpressLexer extends Lexer {
             }
 
 
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:153:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:165:32: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -699,7 +771,7 @@ public class VerilogExpressLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -736,10 +808,10 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:156:5: ( ( '0' .. '9' )+ )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:156:7: ( '0' .. '9' )+
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:168:5: ( ( '0' .. '9' )+ )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:168:7: ( '0' .. '9' )+
             {
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:156:7: ( '0' .. '9' )+
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:168:7: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -753,7 +825,7 @@ public class VerilogExpressLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:
+            	    // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -794,8 +866,8 @@ public class VerilogExpressLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:173:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:173:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:185:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:185:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -821,12 +893,12 @@ public class VerilogExpressLexer extends Lexer {
     // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS )
-        int alt3=31;
+        // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:8: ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS )
+        int alt3=34;
         alt3 = dfa3.predict(input);
         switch (alt3) {
             case 1 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:10: T__10
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:10: T__10
                 {
                 mT__10(); 
 
@@ -834,7 +906,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:16: T__11
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:16: T__11
                 {
                 mT__11(); 
 
@@ -842,7 +914,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:22: T__12
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:22: T__12
                 {
                 mT__12(); 
 
@@ -850,7 +922,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:28: T__13
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:28: T__13
                 {
                 mT__13(); 
 
@@ -858,7 +930,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:34: T__14
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:34: T__14
                 {
                 mT__14(); 
 
@@ -866,7 +938,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:40: T__15
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:40: T__15
                 {
                 mT__15(); 
 
@@ -874,7 +946,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:46: T__16
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:46: T__16
                 {
                 mT__16(); 
 
@@ -882,7 +954,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:52: T__17
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:52: T__17
                 {
                 mT__17(); 
 
@@ -890,7 +962,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:58: T__18
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:58: T__18
                 {
                 mT__18(); 
 
@@ -898,7 +970,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:64: T__19
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:64: T__19
                 {
                 mT__19(); 
 
@@ -906,7 +978,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:70: T__20
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:70: T__20
                 {
                 mT__20(); 
 
@@ -914,7 +986,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:76: T__21
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:76: T__21
                 {
                 mT__21(); 
 
@@ -922,7 +994,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:82: T__22
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:82: T__22
                 {
                 mT__22(); 
 
@@ -930,7 +1002,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:88: T__23
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:88: T__23
                 {
                 mT__23(); 
 
@@ -938,7 +1010,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:94: T__24
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:94: T__24
                 {
                 mT__24(); 
 
@@ -946,7 +1018,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:100: T__25
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:100: T__25
                 {
                 mT__25(); 
 
@@ -954,7 +1026,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:106: T__26
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:106: T__26
                 {
                 mT__26(); 
 
@@ -962,7 +1034,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:112: T__27
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:112: T__27
                 {
                 mT__27(); 
 
@@ -970,7 +1042,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:118: T__28
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:118: T__28
                 {
                 mT__28(); 
 
@@ -978,7 +1050,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 20 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:124: T__29
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:124: T__29
                 {
                 mT__29(); 
 
@@ -986,7 +1058,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 21 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:130: T__30
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:130: T__30
                 {
                 mT__30(); 
 
@@ -994,7 +1066,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 22 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:136: T__31
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:136: T__31
                 {
                 mT__31(); 
 
@@ -1002,7 +1074,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 23 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:142: T__32
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:142: T__32
                 {
                 mT__32(); 
 
@@ -1010,7 +1082,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 24 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:148: T__33
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:148: T__33
                 {
                 mT__33(); 
 
@@ -1018,7 +1090,7 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 25 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:154: T__34
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:154: T__34
                 {
                 mT__34(); 
 
@@ -1026,47 +1098,71 @@ public class VerilogExpressLexer extends Lexer {
                 }
                 break;
             case 26 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:160: NOT_
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:160: T__35
+                {
+                mT__35(); 
+
+
+                }
+                break;
+            case 27 :
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:166: T__36
+                {
+                mT__36(); 
+
+
+                }
+                break;
+            case 28 :
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:172: T__37
+                {
+                mT__37(); 
+
+
+                }
+                break;
+            case 29 :
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:178: NOT_
                 {
                 mNOT_(); 
 
 
                 }
                 break;
-            case 27 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:165: TIMES_
+            case 30 :
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:183: TIMES_
                 {
                 mTIMES_(); 
 
 
                 }
                 break;
-            case 28 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:172: DIV_
+            case 31 :
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:190: DIV_
                 {
                 mDIV_(); 
 
 
                 }
                 break;
-            case 29 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:177: VAR
+            case 32 :
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:195: VAR
                 {
                 mVAR(); 
 
 
                 }
                 break;
-            case 30 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:181: INT
+            case 33 :
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:199: INT
                 {
                 mINT(); 
 
 
                 }
                 break;
-            case 31 :
-                // C:\\Shared_Docs\\lunch\\veGit\\VEGit\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:185: WS
+            case 34 :
+                // C:\\docs\\My Programing\\Java\\VerilogExpress\\eclipse\\VerilogExpress\\ANTLR_src\\VerilogExpress.g:1:203: WS
                 {
                 mWS(); 
 
@@ -1081,93 +1177,112 @@ public class VerilogExpressLexer extends Lexer {
 
     protected DFA3 dfa3 = new DFA3(this);
     static final String DFA3_eotS =
-        "\1\uffff\1\33\1\35\5\uffff\1\37\1\41\1\43\2\uffff\5\27\1\uffff\1"+
-        "\52\20\uffff\5\27\2\uffff\4\27\1\64\3\27\1\70\1\uffff\1\71\2\27"+
-        "\2\uffff\1\74\1\75\2\uffff";
+        "\1\uffff\1\35\1\37\5\uffff\1\41\1\43\1\45\2\uffff\7\31\1\uffff\1"+
+        "\56\20\uffff\7\31\2\uffff\5\31\1\73\5\31\1\102\1\uffff\2\31\1\105"+
+        "\1\106\2\31\1\uffff\1\111\1\31\2\uffff\1\113\1\114\1\uffff\1\115"+
+        "\3\uffff";
     static final String DFA3_eofS =
-        "\76\uffff";
+        "\116\uffff";
     static final String DFA3_minS =
-        "\1\11\1\75\1\46\5\uffff\1\74\1\75\1\76\2\uffff\2\157\1\165\1\151"+
-        "\1\145\1\uffff\1\174\20\uffff\1\156\1\144\1\164\1\160\1\147\2\uffff"+
-        "\1\163\1\165\1\160\1\145\1\60\1\164\1\154\1\165\1\60\1\uffff\1\60"+
-        "\1\145\1\164\2\uffff\2\60\2\uffff";
+        "\1\11\1\75\1\46\5\uffff\1\74\1\75\1\76\2\uffff\1\157\1\156\1\157"+
+        "\1\165\1\151\1\145\1\164\1\uffff\1\174\20\uffff\1\156\1\160\1\144"+
+        "\1\164\1\160\1\147\1\144\2\uffff\1\163\2\165\1\160\1\145\1\60\1"+
+        "\151\2\164\1\154\1\165\1\60\1\uffff\1\156\1\165\2\60\1\145\1\164"+
+        "\1\uffff\1\60\1\164\2\uffff\2\60\1\uffff\1\60\3\uffff";
     static final String DFA3_maxS =
-        "\1\175\1\75\1\46\5\uffff\1\74\1\75\1\76\2\uffff\2\157\1\165\1\151"+
-        "\1\145\1\uffff\1\174\20\uffff\1\156\1\144\1\164\1\160\1\147\2\uffff"+
-        "\1\163\1\165\1\160\1\145\1\172\1\164\1\154\1\165\1\172\1\uffff\1"+
-        "\172\1\145\1\164\2\uffff\2\172\2\uffff";
+        "\1\175\1\75\1\46\5\uffff\1\74\1\75\1\76\2\uffff\1\157\1\156\1\157"+
+        "\1\165\1\151\1\145\1\164\1\uffff\1\174\20\uffff\1\156\1\160\1\144"+
+        "\1\164\1\160\1\147\1\144\2\uffff\1\163\2\165\1\160\1\145\1\172\1"+
+        "\157\2\164\1\154\1\165\1\172\1\uffff\1\156\1\165\2\172\1\145\1\164"+
+        "\1\uffff\1\172\1\164\2\uffff\2\172\1\uffff\1\172\3\uffff";
     static final String DFA3_acceptS =
-        "\3\uffff\1\4\1\5\1\6\1\7\1\10\3\uffff\1\17\1\20\5\uffff\1\26\1\uffff"+
-        "\1\31\1\33\1\34\1\35\1\36\1\37\1\1\1\32\1\2\1\3\1\12\1\11\1\14\1"+
-        "\13\1\16\1\15\5\uffff\1\30\1\27\11\uffff\1\25\3\uffff\1\24\1\21"+
-        "\2\uffff\1\22\1\23";
+        "\3\uffff\1\4\1\5\1\6\1\7\1\10\3\uffff\1\17\1\20\7\uffff\1\31\1\uffff"+
+        "\1\34\1\36\1\37\1\40\1\41\1\42\1\1\1\35\1\2\1\3\1\12\1\11\1\14\1"+
+        "\13\1\16\1\15\7\uffff\1\33\1\32\14\uffff\1\26\6\uffff\1\25\2\uffff"+
+        "\1\21\1\22\2\uffff\1\27\1\uffff\1\23\1\24\1\30";
     static final String DFA3_specialS =
-        "\76\uffff}>";
+        "\116\uffff}>";
     static final String[] DFA3_transitionS = {
-            "\2\31\2\uffff\1\31\22\uffff\1\31\1\1\4\uffff\1\2\1\uffff\1\3"+
-            "\1\4\1\25\1\5\1\uffff\1\6\1\uffff\1\26\12\30\1\uffff\1\7\1\10"+
-            "\1\11\1\12\2\uffff\32\27\1\13\1\uffff\1\14\1\uffff\1\27\1\uffff"+
-            "\2\27\1\15\11\27\1\16\1\27\1\17\1\20\1\27\1\21\10\27\1\22\1"+
-            "\23\1\24",
-            "\1\32",
+            "\2\33\2\uffff\1\33\22\uffff\1\33\1\1\4\uffff\1\2\1\uffff\1\3"+
+            "\1\4\1\27\1\5\1\uffff\1\6\1\uffff\1\30\12\32\1\uffff\1\7\1\10"+
+            "\1\11\1\12\2\uffff\32\31\1\13\1\uffff\1\14\1\uffff\1\31\1\uffff"+
+            "\2\31\1\15\5\31\1\16\3\31\1\17\1\31\1\20\1\21\1\31\1\22\1\23"+
+            "\7\31\1\24\1\25\1\26",
             "\1\34",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\36",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\40",
             "\1\42",
-            "",
-            "",
             "\1\44",
-            "\1\45",
+            "",
+            "",
             "\1\46",
             "\1\47",
             "\1\50",
-            "",
             "\1\51",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\1\52",
             "\1\53",
             "\1\54",
+            "",
             "\1\55",
-            "\1\56",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\57",
-            "",
-            "",
             "\1\60",
             "\1\61",
             "\1\62",
             "\1\63",
-            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
+            "\1\64",
             "\1\65",
+            "",
+            "",
             "\1\66",
             "\1\67",
-            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
-            "",
-            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
+            "\1\70",
+            "\1\71",
             "\1\72",
-            "\1\73",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\74\5\uffff\1\75",
+            "\1\76",
+            "\1\77",
+            "\1\100",
+            "\1\101",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "",
+            "\1\103",
+            "\1\104",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\107",
+            "\1\110",
+            "",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\1\112",
             "",
             "",
-            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
-            "\12\27\7\uffff\32\27\4\uffff\1\27\1\uffff\32\27",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "",
+            "\12\31\7\uffff\32\31\4\uffff\1\31\1\uffff\32\31",
+            "",
             "",
             ""
     };
@@ -1202,7 +1317,7 @@ public class VerilogExpressLexer extends Lexer {
             this.transition = DFA3_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS );";
+            return "1:1: Tokens : ( T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | NOT_ | TIMES_ | DIV_ | VAR | INT | WS );";
         }
     }
  
