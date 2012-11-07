@@ -29,14 +29,12 @@ public class VerilogFileModule extends DoBlock{
 		result += indent + "module " + moduleName + "(\n" ;
 		
 		for( InputPort inputPort : inputPorts ){
-			result += inputPort.generateParamList();
+			result += inputPort.generateParamList() + ",\n";
 		}
-		if( !inputPorts.isEmpty() ) result += ",\n";
 		
 		for( OutputPort outputPort : outputPorts ){
-			result += outputPort.generateParamList();
+			result += outputPort.generateParamList() + ",\n";
 		}
-		if( !outputPorts.isEmpty() ) result += ",\n";
 		
 		result += getClockSignal() + ",\n" 
 				+ getResetSignal() + ");\n";

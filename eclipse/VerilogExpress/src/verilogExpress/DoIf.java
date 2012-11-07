@@ -1,5 +1,6 @@
 package verilogExpress;
 
+
 public class DoIf extends DoBlock implements DataTarget{
 	
 	DataSource test = null;
@@ -16,22 +17,37 @@ public class DoIf extends DoBlock implements DataTarget{
 	public void connectIfDo( Doable newIfDo ){
 		if( ifDo == null ){
 			ifDo = newIfDo;
-			ifDo.setParrent(this);
+			appendDo( newIfDo );
 		}
 	}
 	
 	public void connectElseDo( Doable newElseDo ){
 		if( elseDo == null ){
 			elseDo = newElseDo;
-			elseDo.setParrent(this);
+			appendDo( newElseDo );
 		}
 	}
 	String getDidTestRegName(){    return getUniqueName() + "_DidTestReg"; }
 	String getPassedTestRegName(){ return getUniqueName() + "_TestPassedReg"; }
 	
 	@Override
-	public String genTopCode(String indent) {
+	public String getChildNum(Doable child) {
 		String result = "";
+	
+		if( child == ifDo ){
+			result = "ifDo";
+		}else if( child == elseDo ){
+			result = "elseDo";
+		}else{
+			throw new NullPointerException( "Unknown child" );
+		}
+		
+		return result;
+	}
+	
+	@Override
+	public String genTopCode(String indent) {
+		String result = super.genTopCode(indent);
 		result += indent + "reg " + getDidTestRegName() + ";\n";
 		result += indent + "reg " + getPassedTestRegName() + ";\n";
 		return result;
@@ -40,7 +56,7 @@ public class DoIf extends DoBlock implements DataTarget{
 	
 	@Override
 	public String genMiddleCode(String indent) throws Exception {
-		String result = "";
+		String result = super.genMiddleCode(indent);
 		
 		result += indent + "always @( posedge " + parrent.getClockSignal() + " )\n";
 		result += indent + "if( " + parrent.getResetSignal() + " )begin\n";
@@ -58,18 +74,12 @@ public class DoIf extends DoBlock implements DataTarget{
 		result += indent + "   " + getPassedTestRegName() + " <= 0;\n";
 		result += indent + "end else begin\n";
 		result += indent + "   if( " + getActiveSignal() + " && !" + getDidTestRegName() + " && " + test.getSourceIsReadySignal() + " ) begin\n";
-		result += indent + "       " + getPassedTestRegName() + " <= " + test.getSourceDataSignal() + "[0];\n";
+		result += indent + "       " + getPassedTestRegName() + " <= " + test.getSourceDataSignal() + ";\n";
 		result += indent + "   end else if( " + getDoneSignal() + " ) begin\n";
 		result += indent + "       " + getPassedTestRegName() + " <= 0;\n";
 		result += indent + "   end\n";
 		result += indent + "end\n";
 		
-		return result;
-	}
-	
-	@Override
-	public String genBottomCode(String indent) {
-		String result = "";
 		return result;
 	}
 	

@@ -15,7 +15,7 @@ public class DoWhile extends DoBlock implements DataTarget{
 	public void connectWhileDo( Doable newWhileDo ){
 		if( whileDo == null ){
 			whileDo = newWhileDo;
-			whileDo.setParrent(this);
+			appendDo( newWhileDo );
 		}
 	}
 	
@@ -23,46 +23,59 @@ public class DoWhile extends DoBlock implements DataTarget{
 	String getPassedTestRegName(){ return getUniqueName() + "_TestPassedReg"; }
 	
 	@Override
-	public String genTopCode(String indent) {
+	public String getChildNum(Doable child) {
 		String result = "";
+	
+		if( child == whileDo ){
+			result = "whileDo";
+		}else{
+			throw new NullPointerException( "Unknown child" );
+		}
+		
+		return result;
+	}
+	
+	@Override
+	public String genTopCode(String indent) {
+		String result = super.genTopCode(indent);
+		
 		result += indent + "reg " + getDidTestRegName() + ";\n";
 		result += indent + "reg " + getPassedTestRegName() + ";\n";
+
 		return result;
 	}
 	
 	
 	@Override
 	public String genMiddleCode(String indent) throws Exception {
-		String result = "";
+		String result = super.genMiddleCode(indent);
 		
 		result += indent + "always @( posedge " + parrent.getClockSignal() + " )\n";
 		result += indent + "if( " + parrent.getResetSignal() + " )begin\n";
-		result += indent + "   " + getDidTestRegName() + " <= 0;\n";
+		result += indent + "   " + getDidTestRegName() + " <= #1 0;\n";
 		result += indent + "end else begin\n";
-		result += indent + "   if( " + getActiveSignal() + " && " + test.getSourceIsReadySignal() + " ) begin\n";
-		result += indent + "       " + getDidTestRegName() + " <= 1;\n";
-		result += indent + "   end else if( " + whileDo.getDoneSignal() + " ) begin\n";
-		result += indent + "       " + getDidTestRegName() + " <= 0;\n";
+		result += indent + "   if( !" + getActiveSignal() + " ) begin\n";
+		result += indent + "       " + getDidTestRegName() + " <= #1 0;\n";
+		result += indent + "   end else if( !" + getDidTestRegName() + " ) begin\n";
+		result += indent + "       " + getDidTestRegName() + " <= #1 " + test.getSourceIsReadySignal() + ";\n";
+		result += indent + "   end else begin\n";
+		result += indent + "       " + getDidTestRegName() + " <= #1 " + getPassedTestRegName() + " && " + getDidTestRegName() + " && !" + whileDo.getDoneSignal() + ";\n";
 		result += indent + "   end\n";
 		result += indent + "end\n";
 		
 		result += indent + "always @( posedge " + parrent.getClockSignal() + " )\n";
 		result += indent + "if( " + parrent.getResetSignal() + " )begin\n";
-		result += indent + "   " + getPassedTestRegName() + " <= 0;\n";
+		result += indent + "   " + getPassedTestRegName() + " <= #1 0;\n";
 		result += indent + "end else begin\n";
-		result += indent + "   if( " + getActiveSignal() + " && !" + getDidTestRegName() + " && " + test.getSourceIsReadySignal() + " ) begin\n";
-		result += indent + "       " + getPassedTestRegName() + " <= " + test.getSourceDataSignal() + "[0];\n";
+		result += indent + "   if( !" + getActiveSignal() + " ) begin\n";
+		result += indent + "       " + getPassedTestRegName() + " <= #1 0;\n";
+		result += indent + "   end else if( !" + getDidTestRegName() + " ) begin\n";
+		result += indent + "       " + getPassedTestRegName() + " <= #1 " + test.getSourceIsReadySignal() + " && " + test.getSourceDataSignal() + ";\n";
 		result += indent + "   end else if( " + whileDo.getDoneSignal() + " ) begin\n";
-		result += indent + "       " + getPassedTestRegName() + " <= 0;\n";
+		result += indent + "       " + getPassedTestRegName() + " <= #1 0;\n";
 		result += indent + "   end\n";
 		result += indent + "end\n";
-		
-		return result;
-	}
-	
-	@Override
-	public String genBottomCode(String indent) {
-		String result = "";
+
 		return result;
 	}
 	

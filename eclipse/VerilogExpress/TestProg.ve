@@ -1,4 +1,19 @@
-module testModule[
-	input sue;
-	stdout = sue;
-]
+module testProg{
+	reg x = 0;
+	reg y = 0;
+	
+	output xOut;
+	output yOut;
+	
+	while( x < 10 ){
+		y = 0;
+		while( y < 10 )
+			y = y + 1;
+		
+		x = x + 1;
+	}
+	
+	xOut = x;
+	yOut = y;
+	stdout = 1;
+}

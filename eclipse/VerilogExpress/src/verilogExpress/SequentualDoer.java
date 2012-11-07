@@ -123,6 +123,7 @@ public class SequentualDoer extends DoBlock {
 
 	@Override
 	String getDescribeName() {
+		//if( true ) throw new NullPointerException( "Here!" );
 		return "SequentualDoer";
 	}
 

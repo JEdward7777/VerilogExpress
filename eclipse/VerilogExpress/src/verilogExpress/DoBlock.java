@@ -27,6 +27,11 @@ abstract public class DoBlock extends Doable {
 	abstract public String getChildActiveSignal(Doable doable);
 	
 	public String getChildNum( Doable child ){
+		if( listToDo.indexOf( child ) == -1 ){
+			System.out.println( "listToDo: " + listToDo );
+			System.out.println( "Child : " + child );
+			throw new NullPointerException( "Child should be found" );
+		}
 		return "" + listToDo.indexOf( child );
 	}
 
