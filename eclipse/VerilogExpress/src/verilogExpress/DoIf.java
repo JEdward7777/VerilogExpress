@@ -58,25 +58,31 @@ public class DoIf extends DoBlock implements DataTarget{
 	public String genMiddleCode(String indent) throws Exception {
 		String result = super.genMiddleCode(indent);
 		
+		//TODO: want to update this with the k-maps I have created.
+		
 		result += indent + "always @( posedge " + parrent.getClockSignal() + " )\n";
 		result += indent + "if( " + parrent.getResetSignal() + " )begin\n";
-		result += indent + "   " + getDidTestRegName() + " <= 0;\n";
+		result += indent + "   " + getDidTestRegName() + " <= #1 0;\n";
 		result += indent + "end else begin\n";
-		result += indent + "   if( " + getActiveSignal() + " && " + test.getSourceIsReadySignal() + " ) begin\n";
-		result += indent + "       " + getDidTestRegName() + " <= 1;\n";
-		result += indent + "   end else if( " + getDoneSignal() + " ) begin\n";
-		result += indent + "       " + getDidTestRegName() + " <= 0;\n";
+		result += indent + "   if( !" + getActiveSignal() + " ) begin\n";
+		result += indent + "       " + getDidTestRegName() + " <= #1 0;\n";
+		result += indent + "   end else if( !" + getDidTestRegName() + " ) begin\n";
+		result += indent + "       " + getDidTestRegName() + " <= #1 " + test.getSourceIsReadySignal() + ";\n";
+		result += indent + "   end else begin\n";
+		result += indent + "       " + getDidTestRegName() + " <= #1 !" + getTaskDone() + ";\n";
 		result += indent + "   end\n";
 		result += indent + "end\n";
 		
 		result += indent + "always @( posedge " + parrent.getClockSignal() + " )\n";
 		result += indent + "if( " + parrent.getResetSignal() + " )begin\n";
-		result += indent + "   " + getPassedTestRegName() + " <= 0;\n";
+		result += indent + "   " + getPassedTestRegName() + " <= #1 0;\n";
 		result += indent + "end else begin\n";
-		result += indent + "   if( " + getActiveSignal() + " && !" + getDidTestRegName() + " && " + test.getSourceIsReadySignal() + " ) begin\n";
-		result += indent + "       " + getPassedTestRegName() + " <= " + test.getSourceDataSignal() + ";\n";
-		result += indent + "   end else if( " + getDoneSignal() + " ) begin\n";
-		result += indent + "       " + getPassedTestRegName() + " <= 0;\n";
+		result += indent + "   if( !" + getActiveSignal() + " ) begin\n";
+		result += indent + "       " + getPassedTestRegName() + " <= #1 0;\n";
+		result += indent + "   end else if( !" + getDidTestRegName() + " ) begin\n";
+		result += indent + "       " + getPassedTestRegName() + " <= #1 " + test.getSourceIsReadySignal() + " && " + test.getSourceDataSignal() + ";\n";
+		result += indent + "   end else begin\n";
+		result += indent + "       " + getPassedTestRegName() + " <= #1 " + getPassedTestRegName() + " && !" + getTaskDone() + ";\n";
 		result += indent + "   end\n";
 		result += indent + "end\n";
 		
@@ -97,16 +103,20 @@ public class DoIf extends DoBlock implements DataTarget{
 		}
 		return result;
 	}
-
-	@Override
-	String getDoneSignal() {
+	
+	String getTaskDone(){
 		String result = "";
 		if( elseDo == null ){
-			result = "(" + getDidTestRegName() + " && " + ifDo.getDoneSignal() + ")";
+			result = "( " + ifDo.getDoneSignal() + " || !" + getPassedTestRegName() + " )";
 		}else{
-			result = "(" + getDidTestRegName() + " && ( " + getPassedTestRegName() + "?" + ifDo.getDoneSignal() + ":" + elseDo.getDoneSignal() + " ) )";
+			result = "( " + getPassedTestRegName() + "?" + ifDo.getDoneSignal() + ":" + elseDo.getDoneSignal() + " )";
 		}
 		return result;
+	}
+	
+	@Override
+	String getDoneSignal() { 
+		return "(" + getTaskDone() + " && " + getDidTestRegName() + " )";
 	}
 	@Override
 	String getDescribeName() {
