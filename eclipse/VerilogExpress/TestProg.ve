@@ -1,25 +1,16 @@
-module testProg{
-	reg x = 0;
-	reg y = 0;
-	reg z = 0;
-	
-
-	while( x < 10 ){
-		y = 0;
-		while( y < 10 ){
-			y = y + 1;
-			if( x==y ){
-				z = z + 1;
-			}
-		}
-		
-		x = x + 1;
-	}	
-	
-	output xOut;
-	output yOut;
-
-	xOut = x;
-	yOut = y;
-	stdout = 1;
-}
+module testProg[
+	reg a = 0;
+	pipe c;
+	reg d = 0;
+	reg e = 0;
+	while( 1 ){
+		a = a + 1;
+		e = 0;
+		while( e < a ) e = e + 1;
+		c = e;
+	}
+	while( 1 ){
+		d = c;
+	}
+	stdout=1;
+]
