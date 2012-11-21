@@ -47,7 +47,7 @@ moduleDec returns [ VerilogFileModule module, String progName ]
 	
 doBlock returns [ DoBlock block ]
 	:
-	 parallelDoer { $block = $parallelDoer.block;  currentBlock = $block.getParrent(); }
+	 parallelDoer {    $block = $parallelDoer.block;    currentBlock = $block.getParrent(); }
 	| sequentualDoer { $block = $sequentualDoer.block;  currentBlock = $block.getParrent(); }
 	;
 	
