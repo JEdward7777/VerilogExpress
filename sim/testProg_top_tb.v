@@ -48,6 +48,9 @@ module testProg_top_tb;
 	);
 
 	initial begin
+		$dumpfile("testProg_top.vcd");
+		$dumpvars(0,uut);
+	
 		// Initialize Inputs
 		stdOutAckInput = 0;
 		clockInput = 0;
@@ -61,6 +64,9 @@ module testProg_top_tb;
 		resetInput = 1;
 		@(posedge clockInput);
 		resetInput = 0;
+
+		#1000;
+		$finish();
 
 	end
       

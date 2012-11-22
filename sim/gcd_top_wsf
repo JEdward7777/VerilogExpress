@@ -1,0 +1,97 @@
+[*]
+[*] GTKWave Analyzer v3.3.39 (w)1999-2012 BSI
+[*] Thu Nov 22 15:09:37 2012
+[*]
+[dumpfile] "C:\docs\My Programing\Java\VerilogExpress\sim\gcd_top.vcd"
+[savefile] "C:\docs\My Programing\Java\VerilogExpress\sim\gcd_top_wsf"
+[timestart] 0
+[size] 1280 740
+[pos] -5 -5
+*-17.147947 135000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] gcd_top_tb.
+[sst_width] 211
+[signals_width] 328
+[sst_expanded] 1
+[sst_vpaned_height] 204
+@28
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_DidTestReg
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_DoneReg
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_DoAssign2_IsActiveWire
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_ParallelDoer0_DoAssign1_DoneReg
+@24
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_Reg[31:0]
+@28
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_DidTestReg
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_IsActiveWire
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_SequentualDoerwhileDo_if0_DidTestReg
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_SequentualDoerwhileDo_if0_IsActiveWire
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_SequentualDoerwhileDo_if0_ParallelDoerifDo_DoAssign0_DoneReg
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_SequentualDoerwhileDo_if0_ParallelDoerifDo_DoAssign1_DoneReg
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_SequentualDoerwhileDo_if0_TestPassedReg
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_TestPassedReg
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_TestPassedReg
+@24
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_while1_SequentualDoerwhileDo_Reg[31:0]
+@28
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_ParallelDoer0_IsActiveWire
+gcd_top_tb.uut.Modulegcd_top_ParallelDoer0_while0_SequentualDoerwhileDo_ParallelDoer0_DoAssign0_DoneReg
+gcd_top_tb.uut.aInIsReadyInput
+gcd_top_tb.uut.aInAckOutput
+@24
+gcd_top_tb.uut.aInDataInput[31:0]
+@25
+gcd_top_tb.uut.aRegReg[31:0]
+@28
+gcd_top_tb.uut.bInAckOutput
+@24
+gcd_top_tb.uut.bInDataInput[31:0]
+@c00024
+gcd_top_tb.uut.bRegReg[31:0]
+@28
+(0)gcd_top_tb.uut.bRegReg[31:0]
+(1)gcd_top_tb.uut.bRegReg[31:0]
+(2)gcd_top_tb.uut.bRegReg[31:0]
+(3)gcd_top_tb.uut.bRegReg[31:0]
+(4)gcd_top_tb.uut.bRegReg[31:0]
+(5)gcd_top_tb.uut.bRegReg[31:0]
+(6)gcd_top_tb.uut.bRegReg[31:0]
+(7)gcd_top_tb.uut.bRegReg[31:0]
+(8)gcd_top_tb.uut.bRegReg[31:0]
+(9)gcd_top_tb.uut.bRegReg[31:0]
+(10)gcd_top_tb.uut.bRegReg[31:0]
+(11)gcd_top_tb.uut.bRegReg[31:0]
+(12)gcd_top_tb.uut.bRegReg[31:0]
+(13)gcd_top_tb.uut.bRegReg[31:0]
+(14)gcd_top_tb.uut.bRegReg[31:0]
+(15)gcd_top_tb.uut.bRegReg[31:0]
+(16)gcd_top_tb.uut.bRegReg[31:0]
+(17)gcd_top_tb.uut.bRegReg[31:0]
+(18)gcd_top_tb.uut.bRegReg[31:0]
+(19)gcd_top_tb.uut.bRegReg[31:0]
+(20)gcd_top_tb.uut.bRegReg[31:0]
+(21)gcd_top_tb.uut.bRegReg[31:0]
+(22)gcd_top_tb.uut.bRegReg[31:0]
+(23)gcd_top_tb.uut.bRegReg[31:0]
+(24)gcd_top_tb.uut.bRegReg[31:0]
+(25)gcd_top_tb.uut.bRegReg[31:0]
+(26)gcd_top_tb.uut.bRegReg[31:0]
+(27)gcd_top_tb.uut.bRegReg[31:0]
+(28)gcd_top_tb.uut.bRegReg[31:0]
+(29)gcd_top_tb.uut.bRegReg[31:0]
+(30)gcd_top_tb.uut.bRegReg[31:0]
+(31)gcd_top_tb.uut.bRegReg[31:0]
+@1401200
+-group_end
+@28
+gcd_top_tb.uut.bInIsReadyInput
+gcd_top_tb.uut.clockInput
+gcd_top_tb.uut.oOutAckInput
+@24
+gcd_top_tb.uut.oOutDataOutput[31:0]
+@28
+gcd_top_tb.uut.oOutReadyOutput
+gcd_top_tb.uut.resetInput
+@20000
+-
+[pattern_trace] 1
+[pattern_trace] 0

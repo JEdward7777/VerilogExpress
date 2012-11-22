@@ -1,0 +1,21 @@
+module gcd[
+	input aIn;
+	input bIn;
+	output oOut;
+
+	while( 1 ){
+		reg aReg = 0;
+		reg bReg = 0;
+		[ aReg = aIn; bReg = bIn; ]
+
+		while( bReg != 0 ){
+			if( aReg < bReg )[	
+				aReg = bReg;
+				bReg = aReg;
+			]else
+				aReg = aReg - bReg;
+		}
+
+		oOut = aReg;
+	}
+]

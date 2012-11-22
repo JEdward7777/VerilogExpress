@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.39 (w)1999-2012 BSI
+[*] Wed Nov 21 22:09:57 2012
+[*]
+[dumpfile] "C:\docs\My Programing\Java\VerilogExpress\sim\testProg_top.vcd"
+[savefile] "C:\docs\My Programing\Java\VerilogExpress\sim\testProg_top_wsf"
+[timestart] 0
+[size] 1280 740
+[pos] -1 -1
+*-18.067133 109999 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testProg_top_tb.
+[sst_width] 307
+[signals_width] 110
+[sst_expanded] 1
+[sst_vpaned_height] 204
+@25
+testProg_top_tb.uut.aReg[31:0]
+testProg_top_tb.uut.eReg[31:0]
+testProg_top_tb.uut.dReg[31:0]
+@28
+testProg_top_tb.uut.clockInput
+[pattern_trace] 1
+[pattern_trace] 0
