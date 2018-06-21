@@ -51,7 +51,7 @@ module gcd_top_tb;
 		.bInIsReadyInput( bInIsReadyInput ),
 		.bInDataInput( bInDataInput ),
 		.bInAckOutput( bInAckOutput ),
-		.oOutReadyOutput( bOutReadyOutput ),
+		.oOutReadyOutput( oOutReadyOutput ),
 		.oOutDataOutput( oOutDataOutput ),
 		.oOutAckInput( oOutAckInput ),
 		.clockInput( clockInput ),
@@ -68,7 +68,7 @@ module gcd_top_tb;
 		@(posedge clockInput);
 		while( 1 ) begin
 
-			while( bOutReadyOutput != 1 ) @(posedge clockInput);
+			while( oOutReadyOutput != 1 ) @(posedge clockInput);
 			
 			receivedData = oOutDataOutput;
 			oOutAckInput = #1 1;
